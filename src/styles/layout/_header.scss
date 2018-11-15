@@ -1,0 +1,13 @@
+.header{
+  &__top{
+    height: $top-header-height;
+    background-color: $top-header-bg;
+
+    &-inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+}

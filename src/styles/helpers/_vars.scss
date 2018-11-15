@@ -7,6 +7,7 @@ $_bluey-grey: #8991b2;
 $_bluey-grey2: #8a8eb3;
 $_indigo-blue: #3a1a91;
 $_indigo-blue2 : #421e9e;
+$_persian-indigo: #301678;
 $_black: #000;
 
 // Setting Colors
@@ -18,3 +19,13 @@ $dark-settings-color: $_black;
 $accent-font-color: $_pinkish-orange;
 $basic-font-color: $_charcoal-grey;
 $light-font-color: $_white;
+
+// Bg Colors
+$dark-bg-color-prim: $_persian-indigo;
+
+// Common vars
+$container-max-width: 1040px;
+
+// Header vars
+$top-header-height: 71px;
+$top-header-bg: $dark-bg-color-prim;
