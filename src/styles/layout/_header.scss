@@ -1,4 +1,6 @@
 .header{
+  z-index: 500;
+  
   &__top{
     height: $top-header-height;
     background-color: $top-header-bg;

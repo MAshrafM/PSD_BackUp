@@ -35,17 +35,19 @@
         @include transition-mix;
         color: inherit;
 
-        &:hover{
+        &:hover, &.js-active{
           color: $contact-login-color-hover;
         }
       }
     }
 
     &-block{
+      display: none;
       @include position-absolute($top: 100%, $right: 0);
       width: $login-form-width;
       padding: $login-form-padding;
       background-color: $login-form-bg;
+      z-index: 501;
     }
 
     &-form{
