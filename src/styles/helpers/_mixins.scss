@@ -1,0 +1,64 @@
+@mixin vertical-align($position: relative){
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position: relative){  
+  position: $position;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin transform($args...){
+  -webkit-transform: $args;
+  -ms-transform: $args;
+  transform: $args;
+}
+@mixin user-select($args...){
+  -webkit-user-select: $args;
+  user-select: $args;
+}
+
+@mixin circle($diameter){
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+}
+
+@mixin clearfix(){
+  &:after, &:before{
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@mixin breakpoint($point) {
+  @if $point == portrait {
+    @media (max-width: 576px) { @content; }
+  }
+   @else if $point == landscape {
+     @media (max-width: 768px) { @content ; }
+  }
+   @else if $point == tablet {
+     @media (max-width: 992px) { @content ; }
+  }
+    @else if $point == desktop {
+     @media (max-width: 1199.98px) { @content ; }
+  }
+   @else if $point == lg-desktop {
+     @media (min-width: 1200px)  { @content ; }
+  }
+}
