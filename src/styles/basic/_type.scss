@@ -9,6 +9,26 @@
 }
 
 @font-face {
+  font-family: 'BwModelica';
+  src: url('../fonts/bw-modelica/woff2/BwModelica-Bold.woff2') format("woff2"),
+  url('../fonts/bw-modelica/woff/BwModelica-Bold.woff') format("woff"),
+  url('../fonts/bw-modelica/otf/BwModelica-Bold.otf') format('otf'),
+  url('../fonts/bw-modelica/eot/BwModelica-Bold.eot') format('eot');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BwModelica';
+  src: url('../fonts/bw-modelica/woff2/BwModelica-Medium.woff2') format("woff2"),
+  url('../fonts/bw-modelica/woff/BwModelica-Medium.woff') format("woff"),
+  url('../fonts/bw-modelica/otf/BwModelica-Medium.otf') format('otf'),
+  url('../fonts/bw-modelica/eot/BwModelica-Medium.eot') format('eot');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'ProximaNova';
   src: url('../fonts/proxima-nova/ProximaNova-Bold.otf');
   font-weight: 700;
@@ -20,10 +40,12 @@ $accent-font-family: 'ProximaNova', serif;
 
 $light-font-weight: 300;
 $default-font-weight: 400;
+$medium-font-weight: 500;
 $bold-font-weight: 700;
 $extra-bold-font-weight: 900;
 
 $default-font-size: 14px;
+$extra-small-font-size: .8rem;
 $small-font-size: 1.07rem;
 
 $default-line-height: 1.3;

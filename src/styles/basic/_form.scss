@@ -1,0 +1,25 @@
+.form{
+  &__input{
+    font: {
+      family: inherit;
+      size: inherit;
+    }
+    color: inherit;
+    outline: none;
+    & + label{
+      font: {
+        weight: inherit;
+      }
+    }
+  }
+  &__button{
+    font: {
+      family: inherit;
+      size: inherit;
+    }
+    color: inherit;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,53 @@
+@mixin button-mix ($color: $btn-default-color,
+                   $background-color: transparent, 
+                   $border-color: $btn-default-border-color,
+                   $padding: $btn-padding-vert $btn-padding-horz,
+                   $hover-bg-color: $btn-hover-bg-color, 
+                   $hover-color: $btn-hover-color) {
+  @include transition-mix;
+  padding: $padding;
+   font: {
+    size: $btn-default-size;
+    weight: $bold-font-weight;
+  }
+  line-height: 1.96;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: $color;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  border-radius: $btn-border-radius;
+  overflow: visible;
+
+  &:after {
+    @include position-absolute($top: 0, $left: 0);
+    @include transition-mix;
+    content: attr(data-btn-content);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: $hover-color;
+    text-align: center;
+    transform: scale(1.2);
+    background-color: $hover-bg-color;
+    border-radius: $btn-border-radius;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &:hover {
+    border-color: $hover-bg-color;
+     &:after {
+      transform: scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+
+.btn {
+  @include button-mix;
+}

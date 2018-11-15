@@ -1,5 +1,6 @@
 // Colors
 $_white: #fff;
+$_white-smoke: #d8d8d8;
 $_pinkish-orange: #ff6344;
 $_charcoal-grey: #3c3940;
 $_pale-grey: #f2f0fa;
@@ -18,7 +19,8 @@ $dark-settings-color: $_black;
 // Font Colors
 $accent-font-color: $_pinkish-orange;
 $basic-font-color: $_charcoal-grey;
-$light-font-color: $_white;
+$light-font-color-prim: $_white;
+$light-font-color-sec: $_white-smoke;
 
 // Bg Colors
 $dark-bg-color-prim: $_persian-indigo;
@@ -26,10 +28,36 @@ $dark-bg-color-prim: $_persian-indigo;
 // Common vars
 $container-max-width: 1040px;
 
+// btn
+$btn-default-color: $light-font-color-prim;
+$btn-default-border-color: $light-settings-color;
+$btn-default-size: ($extra-small-font-size * 1.07);
+$btn-padding-vert: 12px;
+$btn-padding-horz: 64px;
+$btn-border-radius: $btn-padding-horz;
+$btn-hover-bg-color: $light-settings-color;
+$btn-hover-color: $accent-font-color;
+
 // Header vars
 $top-header-height: 71px;
 $top-header-bg: $dark-bg-color-prim;
-
-$take-assessment-color: $light-font-color;
+// Header > Take Assessment
+$take-assessment-color: $light-font-color-prim;
 $take-assessment-size: $small-font-size;
 $take-assessment-color-hover: $accent-font-color;
+// Header > Contact & Login
+$contact-color: $light-font-color-prim;
+$login-color: $light-font-color-sec;
+$contact-login-color-hover: $accent-font-color;
+$login-form-color: rgba($light-settings-color, .7);
+$login-form-bg: $top-header-bg;
+$contact-login-size: $extra-small-font-size;
+$contact-offset-horz: 32px;
+$login-form-width: 270px;
+$login-form-padding: 15px;
+$login-links-vert-offset: 25px;
+$login-single-link-vert-offset: 8px;
+$login-links-color: $light-font-color-prim;
+$login-links-color-hover: $accent-font-color;
+$login-links-size: ($default-font-size * .9);
+

@@ -1,0 +1,97 @@
+.contact-login{
+  display: flex;
+  align-items: center;
+
+  &__contact{
+    margin-right: $contact-offset-horz;
+    font: {
+      size: $contact-login-size;
+    }
+    color: $contact-color;
+    letter-spacing: 1.2;
+
+    a{
+      @include transition-mix;
+      color: inherit;
+
+      &:hover{
+        color: $contact-login-color-hover;
+      }
+    }
+  }
+
+  &__login{
+
+    &-link{
+      font: {
+        size: $contact-login-size;
+        weight: $bold-font-weight;
+      }
+      color: $login-color;
+      letter-spacing: 1.2;
+      text-transform: uppercase;
+
+      a{
+        @include transition-mix;
+        color: inherit;
+
+        &:hover{
+          color: $contact-login-color-hover;
+        }
+      }
+    }
+
+    &-block{
+      @include position-absolute($top: 100%, $right: 0);
+      width: $login-form-width;
+      padding: $login-form-padding;
+      background-color: $login-form-bg;
+    }
+
+    &-form{
+      font: {
+        weight: $medium-font-weight;
+      }
+      text-align: center;
+      color: $login-form-color;
+    }
+
+    &-input{
+      font: {
+        weight: inherit;
+      }
+      background: transparent;
+      border: 1px solid $login-form-color;
+      border-radius: 5px;
+    }
+
+    &-btn{
+      margin: auto;
+    }
+
+    &-links{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: $login-links-vert-offset;
+      font: {
+        size: $login-links-size;
+      }
+      color: $login-links-color;
+
+      a{
+        @include transition-mix;
+        margin-bottom: $login-single-link-vert-offset;
+        color: inherit;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        &:hover{
+          color: $login-links-color-hover;
+        }
+      }
+    }
+  }
+}
