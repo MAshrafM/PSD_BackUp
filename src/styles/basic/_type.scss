@@ -8,7 +8,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proxima-nova/ProximaNova-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
 $default-font-family: 'BwModelica', serif;
+$accent-font-family: 'ProximaNova', serif;
 
 $light-font-weight: 300;
 $default-font-weight: 400;
@@ -16,4 +24,16 @@ $bold-font-weight: 700;
 $extra-bold-font-weight: 900;
 
 $default-font-size: 14px;
-$default-line-height: 1.25;
+$small-font-size: 1.07rem;
+
+$default-line-height: 1.3;
+
+body{
+  font: {
+    family: $default-font-family;
+    weight: $default-font-weight;
+    size: $default-font-size;
+  }
+  color: #3c3940;
+  line-height: $default-line-height;
+}

@@ -1,0 +1,18 @@
+.take-assessment{
+  &__text{
+    font: {
+      family: $accent-font-family;
+      size: $take-assessment-size;
+      weight: $bold-font-weight;
+    }
+    color: $take-assessment-color;
+    @include transition-mix;
+    a{
+      color: inherit;
+
+      &:hover{
+        color: $take-assessment-color-hover;
+      }
+    }
+  }
+}

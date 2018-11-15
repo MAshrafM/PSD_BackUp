@@ -35,11 +35,22 @@ module.exports = {
       use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader','sass-loader']
     },
     {
+      test: /\.(woff(2)?|ttf|eot|otf|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      use: [{
+          loader: 'file-loader',
+          options: {
+              name: '[name].[ext]'
+              //outputPath: path.resolve(__dirname, 'docs/fonts')
+          }
+      }]
+    },
+    {
       test: /\.(gif|png|jpe?g|svg)$/i,
       loader: 'image-webpack-loader',
       enforce: 'pre',
       options: {
         disable: false
+        //outputPath: path.resolve(__dirname, 'docs/images')
       }
     },
     {
@@ -48,6 +59,7 @@ module.exports = {
       loader: 'url-loader',
       options: {
         limit: 8192
+        //outputPath: path.resolve(__dirname, 'docs/images')
       }
     },
     {

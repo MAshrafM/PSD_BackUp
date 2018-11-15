@@ -7,7 +7,7 @@ $_bluey-grey: #8991b2;
 $_bluey-grey2: #8a8eb3;
 $_indigo-blue: #3a1a91;
 $_indigo-blue2 : #421e9e;
-$_persian-indigo: #301678;
+$_persian-indigo: #272875;
 $_black: #000;
 
 // Setting Colors
@@ -29,3 +29,7 @@ $container-max-width: 1040px;
 // Header vars
 $top-header-height: 71px;
 $top-header-bg: $dark-bg-color-prim;
+
+$take-assessment-color: $light-font-color;
+$take-assessment-size: $small-font-size;
+$take-assessment-color-hover: $accent-font-color;
