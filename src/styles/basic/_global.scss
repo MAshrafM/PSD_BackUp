@@ -1,0 +1,36 @@
+html, body{
+  font: {
+    family: $default-font-family;
+    weight: $default-font-weight;
+    size: $default-font-size;
+  }
+  color: $default-font-color;
+  line-height: $default-line-height;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body{
+  position: relative;
+  overflow-y: hidden;
+
+  a{
+    text-decoration: none!important;
+  }
+
+  img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  button{
+    cursor: pointer;
+    font: {
+      family: inherit;
+      size: inherit;
+    }
+    line-height: inherit;
+  }
+}

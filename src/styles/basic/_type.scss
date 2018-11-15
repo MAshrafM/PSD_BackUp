@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'BwModelica';
+  src: url('../fonts/bw-modelica/woff2/BwModelica-Regular.woff2') format("woff2"),
+       url('../fonts/bw-modelica/woff/BwModelica-Regular.woff') format("woff"),
+       url('../fonts/bw-modelica/otf/BwModelica-Regular.otf') format('otf'),
+       url('../fonts/bw-modelica/eot/BwModelica-Regular.eot') format('eot'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+$default-font-family: 'BwModelica', serif;
+
+$light-font-weight: 300;
+$default-font-weight: 400;
+$bold-font-weight: 700;
+$extra-bold-font-weight: 900;
+
+$default-font-size: 14px;
+$default-line-height: 1.25;

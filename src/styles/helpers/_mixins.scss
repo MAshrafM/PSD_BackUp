@@ -14,11 +14,42 @@
   transform: translateX(-50%);
 }
 
+@mixin position-absolute ($top: null, $left: null, $right: null, $bottom: null) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin img-position($max-width: 200%, $max-height: 200%) {
+  position: relative;
+  overflow: hidden;
+  img {
+    @include position-absolute($top: 50%, $left: 50%);
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: $max-width;
+    max-height: $max-height;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @mixin transform($args...){
   -webkit-transform: $args;
   -ms-transform: $args;
   transform: $args;
 }
+
+@mixin transition-mix($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+  transition-delay: $delay;
+}
+
 @mixin user-select($args...){
   -webkit-user-select: $args;
   user-select: $args;
