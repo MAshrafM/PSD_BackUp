@@ -70,6 +70,7 @@
     }
 
     &-block{
+      position: relative;
       margin-right: 1.8%;
 
       &:last-child{
@@ -104,6 +105,7 @@
 
       &-link{
         @include transition-mix;
+        position: relative;
         display: flex;
         align-items: center;
         padding: $nav-dropdown-block-padding;
@@ -117,6 +119,36 @@
 
           .nav__dropdown-block-descr{
             color: $nav-dropdown-link-hover-color;
+          }
+        }
+
+        &--coming-soon{
+          &::after{
+            @include position-absolute($top: 0, $left: 0);
+            @include transition-mix();
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            content: attr(data-coming-soon);
+            font: {
+              weight: $bold-font-weight;
+            }
+            color: $coming-soon-color;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background-color: $coming-soon-overlay-bg;
+            cursor: default;
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          &:hover{
+            &::after{
+             opacity: 1;
+             visibility: visible;
+            }
           }
         }
       }
@@ -152,7 +184,7 @@
         width: 47%;
         margin-right: 0;
         margin-bottom: $nav-dropdown-block-small-offset-vert;
-        
+
         .nav__dropdown-block-icon{
           @include transition-mix;
           margin-right: ($nav-dropdown-icon-offset * .5);
