@@ -1,0 +1,25 @@
+.icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &--font{
+    font: {
+      family: $icon-font-family;
+    }
+
+    &-big{
+      font: {
+        size: $icon-font-big-size;
+      }
+      line-height: 0.76;
+    }
+  }
+
+  &--bg{
+    width: $icon-bg-dimensions;
+    height: $icon-bg-dimensions;
+    color: $icon-bg-color;
+    background-color: $icon-bg-bg;
+  }
+}

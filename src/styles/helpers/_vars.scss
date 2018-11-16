@@ -2,19 +2,24 @@
 $_white: #fff;
 $_white-smoke: #d8d8d8;
 $_pinkish-orange: #ff6344;
+$_pale-red: #b05442;
 $_charcoal-grey: #3c3940;
 $_pale-grey: #f2f0fa;
 $_bluey-grey: #8991b2;
 $_bluey-grey2: #8a8eb3;
+$_lavender-blue: #faf8ff;
+$_faded-blue: #7c83c5;
 $_indigo-blue: #3a1a91;
 $_indigo-blue2 : #421e9e;
 $_persian-indigo: #272875;
 $_tory-blue: #31318c;
 $_midnight-blue: #191e5a;
+$_midnight-blue-dark: #131744;
 $_black: #000;
 
 // Setting Colors
 $accent-settings-color: $_pinkish-orange;
+$accent-settings-color-sec: $_pale-red;
 $light-settings-color: $_white;
 $dark-settings-color: $_black;
 
@@ -23,14 +28,17 @@ $accent-font-color: $_pinkish-orange;
 $basic-font-color: $_charcoal-grey;
 $light-font-color-prim: $_white;
 $light-font-color-sec: $_white-smoke;
+$light-font-color-over: $_lavender-blue;
+$middle-font-color: $_faded-blue;
 
 // Bg Colors
 $dark-bg-color-prim: $_persian-indigo;
 $dark-bg-color-sec: $_tory-blue;
 $dark-bg-color-over: $_midnight-blue;
+$dark-bg-color-omega: $_midnight-blue-dark;
 
 // Common vars
-$container-max-width: 1040px;
+$container-max-width: 1060px;
 
 // btn
 $btn-default-color: $light-font-color-prim;
@@ -41,6 +49,11 @@ $btn-padding-horz: 64px;
 $btn-border-radius: $btn-padding-horz;
 $btn-hover-bg-color: $light-settings-color;
 $btn-hover-color: $accent-font-color;
+// icon
+$icon-font-big-size: $extra-big-font-size;
+$icon-bg-color: $light-font-color-prim;
+$icon-bg-bg: $accent-settings-color-sec;
+$icon-bg-dimensions: 56px;
 
 // Header vars
 $top-header-height: 71px;
@@ -79,3 +92,10 @@ $nav-link-dropdown-icon-color: $light-font-color-prim;
 $nav-link-dropdown-icon-offset-horz: 8px;
 $nav-link-dropdown-icon-offset-vert: 1px;
 $nav-dropdown-bg: $dark-bg-color-over;
+$nav-dropdown-bottom-bg: $dark-bg-color-omega;
+$nav-dropdown-bottom-padding-vert: 50px;
+$nav-dropdown-header-size: ($small-font-size * 1.05);
+$nav-dropdown-header-color: $light-font-color-over;
+$nav-dropdown-text-color: $middle-font-color;
+$nav-dropdown-text-size: ($extra-small-font-size * 1.15);
+$nav-dropdown-icon-offset-horz: 26px;

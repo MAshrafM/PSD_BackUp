@@ -35,8 +35,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Pump';
+  src: url('../fonts/pump/Pump.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $default-font-family: 'BwModelica', serif;
 $accent-font-family: 'ProximaNova', serif;
+$icon-font-family: 'Pump';
 
 $light-font-weight: 300;
 $default-font-weight: 400;
@@ -47,6 +55,7 @@ $extra-bold-font-weight: 900;
 $default-font-size: 14px;
 $extra-small-font-size: .8rem;
 $small-font-size: 1.07rem;
+$extra-big-font-size: 3.5rem;
 
 $default-line-height: 1.3;
 
