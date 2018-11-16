@@ -9,6 +9,7 @@ $_bluey-grey2: #8a8eb3;
 $_indigo-blue: #3a1a91;
 $_indigo-blue2 : #421e9e;
 $_persian-indigo: #272875;
+$_tory-blue: #31318c;
 $_black: #000;
 
 // Setting Colors
@@ -24,6 +25,7 @@ $light-font-color-sec: $_white-smoke;
 
 // Bg Colors
 $dark-bg-color-prim: $_persian-indigo;
+$dark-bg-color-sec: $_tory-blue;
 
 // Common vars
 $container-max-width: 1040px;
@@ -60,4 +62,9 @@ $login-single-link-vert-offset: 8px;
 $login-links-color: $light-font-color-prim;
 $login-links-color-hover: $accent-font-color;
 $login-links-size: ($default-font-size * .9);
-
+// Header > Nav
+$header-nav-height: 133px;
+$header-nav-bg: $dark-bg-color-sec;
+$header-logo-offset-horz: 20px;
+$logo-standard-width: 40px;
+$logo-standard-height: 40px;
