@@ -25,7 +25,9 @@ $dark-settings-color: $_black;
 
 // Font Colors
 $accent-font-color: $_pinkish-orange;
+$accent-font-color-sec: $_pale-red;
 $basic-font-color: $_charcoal-grey;
+$dark-font-color: $_black;
 $light-font-color-prim: $_white;
 $light-font-color-sec: $_white-smoke;
 $light-font-color-over: $_lavender-blue;
@@ -38,19 +40,22 @@ $dark-bg-color-over: $_midnight-blue;
 $dark-bg-color-omega: $_midnight-blue-dark;
 
 // Common vars
-$container-max-width: 1060px;
+$container-max-width: 1100px;
 
 // btn
 $btn-default-color: $light-font-color-prim;
 $btn-default-border-color: $light-settings-color;
 $btn-default-size: ($extra-small-font-size * 1.07);
 $btn-padding-vert: 12px;
-$btn-padding-horz: 64px;
+$btn-padding-horz: 44px;
 $btn-border-radius: $btn-padding-horz;
 $btn-hover-bg-color: $light-settings-color;
 $btn-hover-color: $accent-font-color;
+$btn-big-font-size: $small-font-size-sec;
+$btn-big-padding-vert: 16px;
 // icon
-$icon-font-big-size: $extra-big-font-size;
+$icon-font-big-size: 49px;
+$icon-font-size: 36px;
 $icon-bg-color: $light-font-color-prim;
 $icon-bg-bg: $accent-settings-color-sec;
 $icon-bg-dimensions: 56px;
@@ -93,9 +98,18 @@ $nav-link-dropdown-icon-offset-horz: 8px;
 $nav-link-dropdown-icon-offset-vert: 1px;
 $nav-dropdown-bg: $dark-bg-color-over;
 $nav-dropdown-bottom-bg: $dark-bg-color-omega;
-$nav-dropdown-bottom-padding-vert: 50px;
+$nav-dropdown-bottom-padding-vert: 40px;
+$nav-dropdown-top-padding-vert: 46px;
 $nav-dropdown-header-size: ($small-font-size * 1.05);
 $nav-dropdown-header-color: $light-font-color-over;
 $nav-dropdown-text-color: $middle-font-color;
 $nav-dropdown-text-size: ($extra-small-font-size * 1.15);
-$nav-dropdown-icon-offset-horz: 26px;
+$nav-dropdown-text-offset-vert: 13px;
+$nav-dropdown-btn-offset-vert: 28px;
+$nav-dropdown-icon-offset: 26px;
+$nav-dropdown-block-padding: 10px;
+$nav-dropdown-block-top-offset: 24px;
+$nav-dropdown-block-small-offset-vert: 10px;
+$nav-dropdown-link-hover-bg: $light-settings-color;
+$nav-dropdown-link-hover-header-color: $accent-font-color-sec;
+$nav-dropdown-link-hover-color: $dark-font-color;
