@@ -4,4 +4,8 @@
   height: 100%;
   max-width: $container-max-width;
   margin: auto;
+
+  &--static{
+    position: static;
+  }
 }
