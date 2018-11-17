@@ -19,7 +19,7 @@
     letter-spacing: 1.4px;
     text-transform: uppercase;
 
-    &:hover{
+    &:hover, &.js-active{
       background-color: $nav-dropdown-bg;
     }
 
@@ -43,6 +43,7 @@
     @include position_absolute($top: 100%, $left: 0);
     width: 100%;
     background-color: $nav-dropdown-bg;
+    display: none;
 
     &-part{
 
@@ -233,6 +234,10 @@
 
         .nav__dropdown-block{
           width: 47%;
+        }
+
+        &--full-width{
+          width: 100%;
         }
       }
 
