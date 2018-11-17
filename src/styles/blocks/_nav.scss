@@ -181,7 +181,6 @@
       }
 
       &--small{
-        width: 47%;
         margin-right: 0;
         margin-bottom: $nav-dropdown-block-small-offset-vert;
 
@@ -231,6 +230,10 @@
 
       &--w-60{
         width: 60%;
+
+        .nav__dropdown-block{
+          width: 47%;
+        }
       }
 
       &--space-between{
