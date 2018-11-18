@@ -1,10 +1,8 @@
 .take-assessment{
-  margin-bottom: $take-assessment-offset-vert;
-  text-align: center;
+  display: none;
 
   @include breakpoint(tablet){
-    margin: 0;
-    text-align: left;
+    display: block;
   }
 
   &__text{

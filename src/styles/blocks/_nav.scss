@@ -18,12 +18,15 @@
     list-style-type: none;
     padding-bottom: $nav-list-padding;
     background-color: $nav-list-bg-color;
+    overflow: hidden;
+    max-height: 400px;
 
     @include breakpoint(tablet){
       position: static;
       display: flex;
       padding: 0;
       width: auto;
+      overflow: visible;
     }
   }
 
@@ -137,14 +140,16 @@
         padding: $nav-dropdown-block-padding;
 
         &:hover{
-          background-color: $nav-dropdown-link-hover-bg;
+          @include breakpoint(tablet){
+            background-color: $nav-dropdown-link-hover-bg;
 
-          .nav__dropdown-block-header{
-            color: $nav-dropdown-link-hover-header-color;
-          }
+            .nav__dropdown-block-header{
+              color: $nav-dropdown-link-hover-header-color;
+            }
 
-          .nav__dropdown-block-descr{
-            color: $nav-dropdown-link-hover-color;
+            .nav__dropdown-block-descr{
+              color: $nav-dropdown-link-hover-color;
+            }
           }
         }
 
@@ -217,8 +222,10 @@
         }
 
         .nav__dropdown-block-link:hover{
-          .nav__dropdown-block-icon{
-            color: $nav-dropdown-link-hover-header-color;
+          @include breakpoint(tablet){
+            .nav__dropdown-block-icon{
+              color: $nav-dropdown-link-hover-header-color;
+            }
           }
         }
       }

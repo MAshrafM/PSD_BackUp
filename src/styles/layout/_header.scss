@@ -2,6 +2,7 @@
   z-index: 500;
   
   &__top{
+    @include transition-mix;
     padding : $top-header-padding-vert 0;
     background-color: $top-header-bg;
 
@@ -24,9 +25,14 @@
   }
 
   &__nav{
-    height: $header-nav-height;
+    @include transition-mix;
+    height: ($header-nav-height * .7);
     background-color: $header-nav-bg;
     position: relative;
+
+    @include breakpoint(tablet){
+      height: $header-nav-height;
+    }
 
     &-inner{
       display: flex;
@@ -36,6 +42,21 @@
 
     &-logo{
       margin-right: $header-logo-offset-horz;
+    }
+  }
+
+  &.js-scrolled {
+    .header__top {
+      @include breakpoint(tablet) {
+        height: ($top-header-height * .6);
+      }
+    }
+
+    .header__nav {
+      height: ($header-nav-height * .6);
+      @include breakpoint(tablet) {
+        height: ($header-nav-height * .8);
+      }
     }
   }
 }
