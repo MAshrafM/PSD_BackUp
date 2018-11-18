@@ -5,7 +5,14 @@ dropdownBtn.click(function(e) {
   e.preventDefault();
   
   const dropdownBtnCurrent = $(this);
-  const dropdownCurrent = dropdownBtnCurrent.siblings('.nav__dropdown');
+  const windowWidth = $(document).width();
+  let dropdownCurrent;
+  if(windowWidth > 996){
+    dropdownCurrent = dropdownBtnCurrent.siblings('.js-dropdown-desktop');
+  } else {
+    dropdownCurrent = dropdownBtnCurrent.siblings('.js-dropdown-mobile');
+  }
+  
 
   if(!dropdownBtnCurrent.hasClass('js-active')){
     dropdownBtn.removeClass('js-active');

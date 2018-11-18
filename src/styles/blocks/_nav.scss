@@ -1,9 +1,23 @@
 .nav{
   align-self: flex-end;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+
+  @include breakpoint(tablet){
+    display: block;
+    height: auto;
+  }
 
   &__list{
-    display: flex;
+    display: none;
     list-style-type: none;
+
+    @include breakpoint(tablet){
+      display: flex;
+    }
   }
 
   &__link{
@@ -40,10 +54,14 @@
   }
 
   &__dropdown{
-    @include position-absolute($top: 100%, $left: 0);
+    position: relative;
     width: 100%;
     background-color: $nav-dropdown-bg;
     display: none;
+
+    @include breakpoint(tablet){
+      @include position-absolute($top: 100%, $left: 0);
+    }
 
     &-part{
 
