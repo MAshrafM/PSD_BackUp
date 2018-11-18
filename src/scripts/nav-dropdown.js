@@ -3,14 +3,18 @@ const dropdown = $('.nav__dropdown');
 
 dropdownBtn.click((e) => {
   e.preventDefault();
-  let dropdownBtnCurrent = $(this),
-      dropdownCurrent = dropdownBtnCurrent.siblings('.nav__dropdown');
+  
+  const dropdownBtnCurrent = $(this);
+  const dropdownCurrent = dropdownBtnCurrent.siblings('.nav__dropdown');
 
   if(!dropdownBtnCurrent.hasClass('js-active')){
     dropdownBtn.removeClass('js-active');
-    dropdownBtnCurrent.removeClass('js-active');
+    dropdownBtnCurrent.addClass('js-active');
     dropdown.fadeOut();
     dropdownCurrent.fadeIn();
+  } else {
+    dropdownBtnCurrent.removeClass('js-active');
+    dropdownCurrent.fadeOut();
   }
 });
 

@@ -16,7 +16,8 @@
   &__nav{
     height: $header-nav-height;
     background-color: $header-nav-bg;
-
+    position: relative;
+    
     &-inner{
       display: flex;
       align-items: center;
