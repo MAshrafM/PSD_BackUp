@@ -1,7 +1,7 @@
 const dropdownBtn = $('.nav__link--dropdown');
 const dropdown = $('.nav__dropdown');
 
-dropdownBtn.click((e) => {
+dropdownBtn.click(function(e) {
   e.preventDefault();
   
   const dropdownBtnCurrent = $(this);
@@ -18,7 +18,7 @@ dropdownBtn.click((e) => {
   }
 });
 
-$(document).click((e) => {
+$(document).click(function(e) {
   if(!($(e.target).closest(dropdown).length || $(e.target).closest(dropdownBtn).length)){
     if($(dropdown).is(':visible')){
       dropdownBtn.removeClass('js-active');

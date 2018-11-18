@@ -301,5 +301,37 @@
         @include position-absolute($top: $nav-icon-bar3-position, $left: 0);
       }
     }
+
+    &.js-opened{
+      .nav__menu-icon-bar{
+        @include transition-mix;
+        @include transform(scale(0.1));
+
+        &-top{
+          transition-delay: 0s;
+        }
+
+        &-middle{
+          transition-delay: 0.05s;
+        }
+
+        &-bottom{
+          transition-delay: 0.1s;
+        }
+      }
+
+      &::before, &::after{
+        @include transition-mix($delay: 0.2s);
+        opacity: 1;
+      }
+
+      &::before{
+        @include transform(scale(1) rotate(-45deg));
+      }
+
+      &::after{
+        @include transform(scale(1) rotate(45deg));
+      }
+    }
   }
 }
