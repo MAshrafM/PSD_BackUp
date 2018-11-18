@@ -40,7 +40,7 @@
   }
 
   &__dropdown{
-    @include position_absolute($top: 100%, $left: 0);
+    @include position-absolute($top: 100%, $left: 0);
     width: 100%;
     background-color: $nav-dropdown-bg;
     display: none;
@@ -243,6 +243,62 @@
 
       &--space-between{
         justify-content: space-between;
+      }
+    }
+  }
+
+  &__menu-icon{
+    position: relative;
+    display: block;
+    height: $nav-icon-height;
+    width: $nav-icon-width;
+    overflow: hidden;
+    cursor: pointer;
+
+    @include breakpoint(tablet){
+      display: none;
+    }
+
+    &::before, &::after{
+      @include transition-mix;
+      display: block;
+      width: 4px;
+      height: 28px;
+      content: '';
+      border-radius: 10px;
+      transform-origin: center center;
+      background-color: $nav-icon-bar-color;
+      opacity: 0;
+    }
+
+    &::before{
+      @include position-absolute($top: 0, $left: 18px);
+      @include transform(scale(0,0) rotate(-45deg));
+    }
+
+    &::after{
+      @include position-absolute($top: 0, $right: 18px);
+      @include transform(scale(0,0) rotate(45deg));
+    }
+
+    &-bar{
+      @include transition-mix($delay: 0.2s);
+      width: 100%;
+      height: $nav-icon-bar-width;
+      transform-origin: left center;
+      background-color: $nav-icon-bar-color;
+      border-radius: 20px;
+
+      &-top{
+        @include position-absolute($top: 0, $left: 0);
+      }
+
+      &-middle{
+        @include position-absolute($top: $nav-icon-bar2-position, $left: 0);
+      }
+
+      &-bottom{
+        @include position-absolute($top: $nav-icon-bar3-position, $left: 0);
       }
     }
   }

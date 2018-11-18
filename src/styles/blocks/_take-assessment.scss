@@ -1,12 +1,23 @@
 .take-assessment{
+  margin-bottom: $take-assessment-offset-vert;
+  text-align: center;
+
+  @include breakpoint(tablet){
+    margin: 0;
+    text-align: left;
+  }
+
   &__text{
     font: {
       family: $accent-font-family;
-      size: $take-assessment-size;
       weight: $bold-font-weight;
     }
     color: $take-assessment-color;
     @include transition-mix;
+    @include breakpoint(tablet){
+      font-size: $take-assessment-size;
+    }
+    
     a{
       color: inherit;
 

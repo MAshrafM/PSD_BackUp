@@ -1,6 +1,11 @@
 .contact-login{
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @include breakpoint(tablet){
+    justify-content: flex-start;
+  }
 
   &__contact{
     margin-right: $contact-offset-horz;

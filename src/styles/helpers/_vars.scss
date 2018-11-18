@@ -65,11 +65,13 @@ $coming-soon-color: $light-font-color-prim;
 
 // Header vars
 $top-header-height: 71px;
+$top-header-padding-vert: 15px;
 $top-header-bg: $dark-bg-color-prim;
 // Header > Take Assessment
 $take-assessment-color: $light-font-color-prim;
 $take-assessment-size: $small-font-size;
 $take-assessment-color-hover: $accent-font-color;
+$take-assessment-offset-vert: 15px;
 // Header > Contact & Login
 $contact-color: $light-font-color-prim;
 $login-color: $light-font-color-sec;
@@ -116,3 +118,9 @@ $nav-dropdown-block-small-offset-vert: 10px;
 $nav-dropdown-link-hover-bg: $light-settings-color;
 $nav-dropdown-link-hover-header-color: $accent-font-color-sec;
 $nav-dropdown-link-hover-color: $dark-font-color;
+$nav-icon-width: 40px;
+$nav-icon-height: 25px;
+$nav-icon-bar-color: $light-settings-color;
+$nav-icon-bar-width: 5px;
+$nav-icon-bar2-position: $nav-icon-bar-width*2;
+$nav-icon-bar3-position: $nav-icon-bar-width*4;

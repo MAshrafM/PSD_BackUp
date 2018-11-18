@@ -2,14 +2,24 @@
   z-index: 500;
   
   &__top{
-    height: $top-header-height;
+    padding : $top-header-padding-vert 0;
     background-color: $top-header-bg;
+
+    @include breakpoint(tablet){
+      padding: 0;
+      height: $top-header-height;
+    }
 
     &-inner{
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100%;
+      flex-direction: column;
+
+      @include breakpoint(tablet){
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+      }
     }
   }
 
@@ -17,7 +27,7 @@
     height: $header-nav-height;
     background-color: $header-nav-bg;
     position: relative;
-    
+
     &-inner{
       display: flex;
       align-items: center;
