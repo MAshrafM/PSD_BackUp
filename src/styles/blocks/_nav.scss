@@ -12,11 +12,18 @@
   }
 
   &__list{
+    @include position-absolute($top: 100%, $right: 0);
+    width: 100%;
     display: none;
     list-style-type: none;
+    padding-bottom: $nav-list-padding;
+    background-color: $nav-list-bg-color;
 
     @include breakpoint(tablet){
+      position: static;
       display: flex;
+      padding: 0;
+      width: auto;
     }
   }
 
