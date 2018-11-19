@@ -1,0 +1,11 @@
+.footer{
+  &__top{
+    padding: $top-footer-padding-vert 0;
+    background-color: $top-footer-bg;
+
+    &-inner{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

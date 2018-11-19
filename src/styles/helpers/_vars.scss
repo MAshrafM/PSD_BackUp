@@ -10,7 +10,7 @@ $_bluey-grey2: #8a8eb3;
 $_lavender-blue: #faf8ff;
 $_faded-blue: #7c83c5;
 $_indigo-blue: #3a1a91;
-$_indigo-blue2 : #421e9e;
+$_indigo-blue2 : #363699;
 $_persian-indigo: #272875;
 $_tory-blue: #31318c;
 $_midnight-blue: #191e5a;
@@ -38,6 +38,7 @@ $dark-bg-color-prim: $_persian-indigo;
 $dark-bg-color-sec: $_tory-blue;
 $dark-bg-color-over: $_midnight-blue;
 $dark-bg-color-omega: $_midnight-blue-dark;
+$dark-bg-color-eps: $_indigo-blue2;
 
 // Common vars
 $container-max-width: 1100px;
@@ -126,3 +127,14 @@ $nav-icon-bar-color: $light-settings-color;
 $nav-icon-bar-width: 5px;
 $nav-icon-bar2-position: $nav-icon-bar-width*2;
 $nav-icon-bar3-position: $nav-icon-bar-width*4;
+// Footer
+$top-footer-padding-vert: 126px;
+$top-footer-bg: $dark-bg-color-eps;
+// Footer > Contact
+$footer-contact-text-color: $light-font-color-prim;
+$footer-contact-text-header-size: $big-font-size;
+$footer-contact-text-content-size: $medium-font-size;
+$footer-contact-text-content-offset-vert: 28px;
+$footer-contact-text-p-offset-vert: 20px;
+$footer-contact-form-color: rgba($light-settings-color, .7);
+$footer-contact-form-textarea-height: 102px;

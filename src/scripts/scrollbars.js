@@ -1,4 +1,4 @@
-import PerfectScrollbar from './perfect-scrollbar';
+import PerfectScrollbar from '../vendor/perfect-scroll/perfect-scrollbar';
 
 if($('.js-scrollbar-1').length > 1){
   const container1 = document.querySelector('.js-scrollbar-1');

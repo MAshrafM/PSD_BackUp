@@ -1,0 +1,72 @@
+.footer-contact{
+
+  &__text{
+    width: 30%;
+    color: $footer-contact-text-color;
+
+    &-header{
+      font: {
+        size: $footer-contact-text-header-size;
+        weight: $bold-font-weight;
+      }
+    }
+
+    &-contact{
+      margin-top: $footer-contact-text-content-offset-vert;
+
+      font: {
+        weight: $medium-font-weight;
+        size: $footer-contact-text-content-size;
+      }
+
+      p{
+        margin-bottom: $footer-contact-text-p-offset-vert;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__form{
+    width: 65%;
+
+    &-form{
+      font-weight: $medium-font-weight;
+      text-align: center;
+      color: $footer-contact-form-color;
+    }
+
+    &-row{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &:first-child {
+        .foxholder-form__item {
+          width: 31.5%;
+          flex-shrink: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        .foxholder-form__item {
+          width: 66%;
+          flex-shrink: 0;
+        }
+      }
+    }
+
+    &-input, &-textarea{
+      font-weight: inherit;
+      background-color: transparent;
+      border: 1px solid $footer-contact-form-color;
+      border-radius: 5px;
+    }
+
+    &-textarea{
+      height: $footer-contact-form-textarea-height;
+    }
+  }
+}
