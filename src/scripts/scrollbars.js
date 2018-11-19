@@ -27,4 +27,13 @@ $(document).scroll(function () {
   } else {
     header.removeClass('js-scrolled');
   }
-})
+});
+
+$(document).ready(function(){
+  const header = $('.header');
+  let offsetTop = header.offset().top;
+
+  if(offsetTop > 0){
+    header.addClass('js-scrolled');
+  }
+});
