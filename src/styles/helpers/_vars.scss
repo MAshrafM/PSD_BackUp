@@ -1,7 +1,7 @@
 // Colors
 $_white: #fff;
 $_white-smoke: #d8d8d8;
-$_pinkish-orange: #ff6344;
+$_pinkish-orange: #d37055;
 $_pale-red: #b05442;
 $_charcoal-grey: #3c3940;
 $_pale-grey: #f2f0fa;
@@ -42,7 +42,10 @@ $dark-bg-color-eps: $_indigo-blue2;
 
 // Common vars
 $container-max-width: 1100px;
-
+// Checkbox
+$checkbox-dimensions: 14px;
+$checkbox-offset-horz: 12px;
+$checkbox-checked-bg: $accent-settings-color;
 // btn
 $btn-default-color: $light-font-color-prim;
 $btn-default-border-color: $light-settings-color;
@@ -54,6 +57,8 @@ $btn-hover-bg-color: $light-settings-color;
 $btn-hover-color: $accent-font-color;
 $btn-big-font-size: $small-font-size-sec;
 $btn-big-padding-vert: 16px;
+$btn-accent-bg: $accent-settings-color;
+$btn-accent-color: $light-font-color-prim;
 // icon
 $icon-font-big-size: 49px;
 $icon-font-size: 36px;
@@ -63,7 +68,6 @@ $icon-bg-dimensions: 56px;
 // coming-soon
 $coming-soon-overlay-bg: rgba($dark-settings-color, .7);
 $coming-soon-color: $light-font-color-prim;
-
 // Header vars
 $top-header-height: 71px;
 $top-header-padding-vert: 15px;
@@ -136,5 +140,8 @@ $footer-contact-text-header-size: $big-font-size;
 $footer-contact-text-content-size: $medium-font-size;
 $footer-contact-text-content-offset-vert: 28px;
 $footer-contact-text-p-offset-vert: 20px;
+$footer-contact-text-offset-vert: 40px;
 $footer-contact-form-color: rgba($light-settings-color, .7);
 $footer-contact-form-textarea-height: 102px;
+$footer-contact-form-checkbox-offset-vert: 20px;
+$footer-contact-form-elem-offset-vert: 25px;

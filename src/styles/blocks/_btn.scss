@@ -75,4 +75,10 @@
       }
     }
   }
+
+  &--accent-color {
+    color: $btn-accent-color;
+    background-color: $btn-accent-bg;
+    border-color: $btn-accent-bg; 
+  }
 }

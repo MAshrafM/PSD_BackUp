@@ -1,11 +1,24 @@
 .footer{
   &__top{
-    padding: $top-footer-padding-vert 0;
+    padding: $top-footer-padding-vert/3 0;
     background-color: $top-footer-bg;
+
+    @include breakpoint(landscape){
+      padding: $top-footer-padding-vert/2 0;
+    }
+
+    @include breakpoint(tablet){
+      padding: $top-footer-padding-vert 0;
+    }
 
     &-inner{
       display: flex;
-      justify-content: space-between;
+      justify-content: column;
+
+      @include breakpoint(tablet){
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
   }
 }

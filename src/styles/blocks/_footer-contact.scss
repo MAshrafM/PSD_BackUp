@@ -1,22 +1,38 @@
 .footer-contact{
 
   &__text{
-    width: 30%;
+    width: 100%;
+    margin-bottom: $footer-contact-text-offset-vert;
+    text-align: center;
     color: $footer-contact-text-color;
+
+    @include breakpoint(tablet){
+      width: 20%;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    @include breakpoint(desktop){
+      width: 30%;
+    }
 
     &-header{
       font: {
-        size: $footer-contact-text-header-size;
+        size: ($footer-contact-text-header-size * 0.8);
         weight: $bold-font-weight;
+      }
+
+      @include breakpoint(desktop){
+        font-size: $footer-contact-text-header-size;
       }
     }
 
     &-contact{
-      margin-top: $footer-contact-text-content-offset-vert;
+      margin-top: ($footer-contact-text-content-offset-vert * 0.4);
 
       font: {
         weight: $medium-font-weight;
-        size: $footer-contact-text-content-size;
+        size: ($footer-contact-text-content-size * 0.6);
       }
 
       p{
@@ -26,11 +42,28 @@
           margin-bottom: 0;
         }
       }
+
+      @include breakpoint(tablet){
+        margin-top: $footer-contact-text-content-offset-vert;
+        font-size: $footer-contact-text-content-size * 0.7;
+      }
+
+      @include breakpoint(desktop){
+        font-size: $footer-contact-text-content-size;
+      }
     }
   }
 
   &__form{
-    width: 65%;
+    width: 100%;
+
+    @include breakpoint(tablet){
+      width: 75%;
+    }
+
+    @include breakpoint(desktop){
+      width: 65%;
+    }
 
     &-form{
       font-weight: $medium-font-weight;
@@ -40,20 +73,34 @@
 
     &-row{
       display: flex;
+      flex-wrap: wrap;
       align-items: flex-start;
       justify-content: space-between;
 
       &:first-child {
         .foxholder-form__item {
-          width: 31.5%;
+          width: 100%;
+          margin-bottom: $footer-contact-form-elem-offset-vert;
           flex-shrink: 0;
+
+          @include breakpoint(landscape){
+            width: 32%;
+          }
+
+          &:last-child {
+            margin-bottom: $footer-contact-form-elem-offset-vert;
+          }
         }
       }
 
       &:nth-child(2) {
         .foxholder-form__item {
-          width: 66%;
+          width: 100%;
           flex-shrink: 0;
+
+          @include breakpoint(landscape){
+            width: 66%;
+          }
         }
       }
     }
@@ -67,6 +114,23 @@
 
     &-textarea{
       height: $footer-contact-form-textarea-height;
+    }
+
+    &-btn-checkbox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include breakpoint(landscape){
+        width: 32%;
+      }
+    }
+
+    &-checkbox {
+      & + label {
+        margin-top: $footer-contact-form-checkbox-offset-vert;
+      }
     }
   }
 }
