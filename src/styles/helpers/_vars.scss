@@ -8,6 +8,7 @@ $_pale-grey: #f2f0fa;
 $_bluey-grey: #8991b2;
 $_bluey-grey2: #8a8eb3;
 $_lavender-blue: #faf8ff;
+$_lavender-blue2: #c0b9ee;
 $_water-blue: #c4c7d8;
 $_faded-blue: #7c83c5;
 $_indigo-blue: #3a1a91;
@@ -33,6 +34,7 @@ $dark-font-color: $_black;
 $light-font-color-prim: $_white;
 $light-font-color-sec: $_white-smoke;
 $light-font-color-over: $_lavender-blue;
+$light-font-color-eps: $_lavender-blue2;
 $middle-font-color: $_faded-blue;
 $middle-font-color-sec: $_bluey-grey2;
 
@@ -168,3 +170,13 @@ $top-link-offset-vert: $footer-nav-list-offset-vert;
 $top-link-size: $footer-nav-item-size;
 // Main
 $page-top-offset-vert: ($top-header-height + $header-nav-height);
+// Main > Page Header
+$page-header-bg-color: $dark-bg-color-sec;
+$page-header-padding-vert: 90px;
+$page-header-header-color: $light-font-color-prim;
+$page-header-h-size: $big-font-size-sec;
+$page-header-content-offset-vert: 24px;
+$page-header-text-size: $small-font-size-omega;
+$page-header-text-color: $light-font-color-eps;
+$page-header-btn-part-offset-vert: 43px;
+$page-header-btn-offset-horz: 12px;

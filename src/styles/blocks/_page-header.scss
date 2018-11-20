@@ -1,0 +1,38 @@
+.page-header{
+  padding: $page-header-padding-vert 0;
+  background-color: $page-header-bg-color;
+
+  &__header{
+    color: $page-header-header-color;
+
+    &-h{
+      font: {
+        size: $page-header-h-size;
+        weight: $bold-font-weight;
+      }
+    }
+  }
+
+  &__content{
+    margin-top: $page-header-content-offset-vert;
+  }
+
+  &__text{
+    font-size: $page-header-text-size;
+    color: $page-header-text-color;
+  }
+
+  &__btn-part{
+    display: flex;
+    justify-content: center;
+    margin-top: $page-header-btn-part-offset-vert;
+  }
+
+  &__btn{
+    margin-right: $page-header-btn-offset-horz;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
