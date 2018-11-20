@@ -38,4 +38,12 @@
       }
     }
   }
+
+  &--img{
+
+    &-sm{
+      width: $icon-dimensions-sm;
+      height: $icon-dimensions-sm;
+    }
+  }
 }

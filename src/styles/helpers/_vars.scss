@@ -8,6 +8,7 @@ $_pale-grey: #f2f0fa;
 $_bluey-grey: #8991b2;
 $_bluey-grey2: #8a8eb3;
 $_lavender-blue: #faf8ff;
+$_water-blue: #c4c7d8;
 $_faded-blue: #7c83c5;
 $_indigo-blue: #3a1a91;
 $_indigo-blue2 : #363699;
@@ -21,6 +22,7 @@ $_black: #000;
 $accent-settings-color: $_pinkish-orange;
 $accent-settings-color-sec: $_pale-red;
 $light-settings-color: $_white;
+$light-settings-color-sec: $_water-blue;
 $dark-settings-color: $_black;
 
 // Font Colors
@@ -66,6 +68,7 @@ $icon-font-size: 36px;
 $icon-bg-color: $light-font-color-prim;
 $icon-bg-bg: $accent-settings-color-sec;
 $icon-bg-dimensions: 56px;
+$icon-dimensions-sm: 25px;
 // coming-soon
 $coming-soon-overlay-bg: rgba($dark-settings-color, .7);
 $coming-soon-color: $light-font-color-prim;
@@ -136,6 +139,7 @@ $nav-icon-bar3-position: $nav-icon-bar-width*4;
 $top-footer-padding-vert: 126px;
 $top-footer-bg: $dark-bg-color-eps;
 $bottom-footer-padding-vert: 80px;
+$bottom-footer-col-offset-vert: 60px;
 // Footer > Contact
 $footer-contact-text-color: $light-font-color-prim;
 $footer-contact-text-header-size: $big-font-size;
@@ -152,3 +156,13 @@ $about-dk-logo-width: 169px;
 $about-dk-text-offset-vert: 20px;
 $about-dk-text-width: 315px;
 $about-dk-text-color: $middle-font-color-sec;
+// Footer > Nav
+$footer-nav-col-offset-vert: 40px;
+$footer-nav-icon-color: $light-settings-color-sec;
+$footer-nav-list-offset-vert: 16px;
+$footer-nav-item-size: ($extra-small-font-size * 1.15);
+$footer-nav-item-offset-vert: 9px;
+$footer-nav-link-hover-color: $accent-settings-color-sec;
+// Footer > to top
+$top-link-offset-vert: $footer-nav-list-offset-vert;
+$top-link-size: $footer-nav-item-size;

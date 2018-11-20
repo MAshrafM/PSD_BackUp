@@ -1,0 +1,43 @@
+.to-top{
+
+  &__icon{
+    padding-bottom: $top-link-offset-vert;
+    transform: translateY(0);
+  }
+
+  &__link{
+    @include transition-mix;
+    
+    display: inline-block;
+    font: {
+      size: $top-link-size;
+      weight: $bold-font-weight;
+    }
+    letter-spacing: 0.7px;
+    color: inherit;
+
+    &:hover{
+      .to-top__icon{
+        animation: bounce 1s cubic-bezier(0.6, 1.12, 1, 0.98) 0s infinite;
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-7px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
