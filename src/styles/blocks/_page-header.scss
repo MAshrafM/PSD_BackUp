@@ -1,11 +1,15 @@
 .page-header{
+  position: relative;
   padding: ($page-header-padding-vert + $page-header-top-offset-vert) 0 $page-header-padding-vert;
+  margin-bottom: 300px;
   background-color: $page-header-bg-color;
 
   &__inner{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
   }
 
   &__header{
@@ -60,6 +64,32 @@
   &--col-x2{
     .page-header__wrapper {
       max-width: $page-header-col-2x-wrapper-width;
+    }
+  }
+
+  &--waves-style-1{
+
+    &::before{
+      @include position-absolute($left: 0, $top: calc(100% - 10px));
+      display: block;
+      width: 100%;
+      height: 100px;
+      content: '';
+      background: url('../images/wave-3.svg') 50% 100% no-repeat;
+      background-size: contain;
+      z-index: 3;
+    }
+
+    &::after{
+      @include position-absolute($left: 0, $bottom: 0);
+      display: block;
+      width: 100%;
+      height: 150%;
+      content: '';
+      background: url('../images/wave-1.svg') 50% 100% no-repeat,
+                  url('../images/wave-2.svg') 0 100% no-repeat;
+      background-size: contain, 70%;
+      z-index: 1;
     }
   }
 }
