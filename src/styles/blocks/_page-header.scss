@@ -1,6 +1,12 @@
 .page-header{
-  padding: $page-header-padding-vert 0;
+  padding: ($page-header-padding-vert + $page-header-top-offset-vert) 0 $page-header-padding-vert;
   background-color: $page-header-bg-color;
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__header{
     color: $page-header-header-color;
@@ -20,6 +26,14 @@
   &__text{
     font-size: $page-header-text-size;
     color: $page-header-text-color;
+
+    p{
+      margin-bottom: $page-header-text-p-offset-vert;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__btn-part{
@@ -33,6 +47,19 @@
 
     &:last-child{
       margin-right: 0;
+    }
+  }
+
+  &__wrapper{
+
+    &--text-centered{
+      text-align: center;
+    }
+  }
+
+  &--col-x2{
+    .page-header__wrapper {
+      max-width: $page-header-col-2x-wrapper-width;
     }
   }
 }
