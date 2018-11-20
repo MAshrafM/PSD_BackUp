@@ -166,3 +166,5 @@ $footer-nav-link-hover-color: $accent-settings-color-sec;
 // Footer > to top
 $top-link-offset-vert: $footer-nav-list-offset-vert;
 $top-link-size: $footer-nav-item-size;
+// Main
+$page-top-offset-vert: ($top-header-height + $header-nav-height);
