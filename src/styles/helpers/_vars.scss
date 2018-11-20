@@ -32,6 +32,7 @@ $light-font-color-prim: $_white;
 $light-font-color-sec: $_white-smoke;
 $light-font-color-over: $_lavender-blue;
 $middle-font-color: $_faded-blue;
+$middle-font-color-sec: $_bluey-grey2;
 
 // Bg Colors
 $dark-bg-color-prim: $_persian-indigo;
@@ -134,6 +135,7 @@ $nav-icon-bar3-position: $nav-icon-bar-width*4;
 // Footer
 $top-footer-padding-vert: 126px;
 $top-footer-bg: $dark-bg-color-eps;
+$bottom-footer-padding-vert: 80px;
 // Footer > Contact
 $footer-contact-text-color: $light-font-color-prim;
 $footer-contact-text-header-size: $big-font-size;
@@ -145,3 +147,8 @@ $footer-contact-form-color: rgba($light-settings-color, .7);
 $footer-contact-form-textarea-height: 102px;
 $footer-contact-form-checkbox-offset-vert: 20px;
 $footer-contact-form-elem-offset-vert: 25px;
+// Footer > About DK
+$about-dk-logo-width: 169px;
+$about-dk-text-offset-vert: 20px;
+$about-dk-text-width: 315px;
+$about-dk-text-color: $middle-font-color-sec;

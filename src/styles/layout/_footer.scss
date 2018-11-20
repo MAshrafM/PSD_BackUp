@@ -21,4 +21,24 @@
       }
     }
   }
+
+  &__bottom{
+    padding: $bottom-footer-padding-vert;
+
+    &-inner{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-col{
+      
+      &--sm{
+        width: 44%;
+      }
+
+      &--lg{
+        width: 54%;
+      }
+    }
+  }
 }

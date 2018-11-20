@@ -1,0 +1,13 @@
+.about-dk{
+
+  &__logo{
+    max-width: $about-dk-logo-width;
+  }
+
+  &__text{
+    margin-top: $about-dk-text-offset-vert;
+    max-width: $about-dk-text-width;
+    font-weight: $medium-font-weight;
+    color: $about-dk-text-color;
+  }
+}
