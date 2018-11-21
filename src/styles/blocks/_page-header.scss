@@ -65,6 +65,7 @@
 
   &__btn{
     margin-bottom: $page-header-btn-offset;
+    margin-right: 0;
 
     &:last-child{
       margin: 0;
@@ -72,6 +73,7 @@
 
     @include breakpoint(landscape){
       margin-right: $page-header-btn-offset;
+      margin-bottom: 0;
     }
   }
 

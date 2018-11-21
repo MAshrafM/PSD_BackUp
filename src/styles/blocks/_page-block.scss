@@ -1,0 +1,7 @@
+.page-block{
+  padding: $page-block-padding-vert 0;
+
+  &--accent-bg-light{
+    background-color: $page-block-accent-bg-light;
+  }
+}

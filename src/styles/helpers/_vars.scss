@@ -4,7 +4,7 @@ $_white-smoke: #d8d8d8;
 $_pinkish-orange: #d37055;
 $_pale-red: #b05442;
 $_charcoal-grey: #3c3940;
-$_pale-grey: #f2f0fa;
+$_pale-grey: #f1f0f9;
 $_bluey-grey: #8991b2;
 $_bluey-grey2: #8a8eb3;
 $_lavender-blue: #faf8ff;
@@ -44,6 +44,8 @@ $dark-bg-color-sec: $_tory-blue;
 $dark-bg-color-over: $_midnight-blue;
 $dark-bg-color-omega: $_midnight-blue-dark;
 $dark-bg-color-eps: $_indigo-blue2;
+$light-bg-color: $_white;
+$light-bg-color-sec: $_pale-grey;
 
 // Common vars
 $container-max-width: 1100px;
@@ -184,3 +186,13 @@ $page-header-btn-part-offset-vert: 43px;
 $page-header-btn-offset: 12px;
 $page-header-col-2x-wrapper-width: 545px;
 $page-header-top-offset-vert: ($top-header-height + $header-nav-height);
+// Main > Page Block
+$page-block-padding-vert: 127px;
+$page-block-aacent-bg-light: $light-bg-color-sec;
+// Main > Page Block > Header Block
+$header-block-offset-vert: 71px;
+$header-block-header-size: $big-font-size-delta;
+$header-block-header-decorated-width: 274px;
+$header-block-header-decoration-bg: $accent-settings-color;
+$header-block-header-decorated-padding-horz: 23px;
+$header-block-text-size: $small-font-size;
