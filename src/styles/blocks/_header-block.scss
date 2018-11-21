@@ -2,12 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: $header-block-offset-vert;
+  margin-bottom: ($header-block-offset-vert * .5);
+
+  @include breakpoint(tablet){
+    margin-bottom: $header-block-offset-vert;
+  }
 
   &--space-between{
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    @include breakpoint(tablet){
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
   }
 
   &__header{
@@ -17,20 +23,36 @@
     text-align: center;
 
     &--decorated{
-      width: $header-block-header-decorated-width;
-      padding-left: $header-block-header-decorated-padding-horz;
-      margin-right: 10%;
-      font-size: ($header-block-header-size * .9);
-      text-align: left;
+      padding-bottom: $header-block-header-decorated-padding-vert;
+      margin-bottom: $header-block-header-decorated-vert-offset;
+      font-size: ($header-block-header-size * .7);
+      text-align: center;
+
+      @include breakpoint(tablet){
+        width: $header-block-header-decorated-width;
+        padding-left: $header-block-header-decorated-padding-horz;
+        padding-bottom: 0;
+        margin-right: 10%;
+        margin-bottom: 0;
+        font-size: ($header-block-header-size * .9);
+        text-align: left;
+      }
 
       &::after{
-        @include position-absolute($top: 50%, $left: 0);
+        @include position-absolute($top: 100%, $left: 50%);
         display: block;
-        width: 3px;
-        height: 82%;
+        width: 60px;
+        height: 3%;
         content: '';
-        transform: translateY(-50%);
+        transform: translateX(-50%);
         background-color: $header-block-header-decoration-bg;
+
+        @include breakpoint(tablet){
+          @include position-absolute($top: 50%, $left: 0);
+          width: 3px;
+          height: 82%;
+          transform: translateY(-50%);
+        }
       }
     }
   }

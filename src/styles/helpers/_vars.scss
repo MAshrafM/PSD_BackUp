@@ -196,11 +196,14 @@ $header-block-header-size: $big-font-size-delta;
 $header-block-header-decorated-width: 274px;
 $header-block-header-decoration-bg: $accent-settings-color;
 $header-block-header-decorated-padding-horz: 23px;
+$header-block-header-decorated-padding-vert: 10px;
+$header-block-header-decorated-vert-offset: 30px;
 $header-block-text-size: $small-font-size;
 // Main Page Block > Cards Block
 $card-bg: $light-settings-color;
 $card-border-radius: 10px;
 $card-md-padding-horz: 45px;
+$card-md-padding-vert: 15px;
 $card-md-height: 125px;
 $card-icon-offset-horz: 25px;
 $card-header-size: ($small-font-size * 1.1);

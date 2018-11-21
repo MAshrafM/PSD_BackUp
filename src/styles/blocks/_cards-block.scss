@@ -1,25 +1,59 @@
 .cards-block {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
+  @include breakpoint(tablet){
+    flex-direction: row;
+  }
 
   &__card {
     display: flex;
     align-items: center;
-    margin-right: .5%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
     flex: 1;
+    background-color: $card-bg;
+    border-radius: $card-border-radius;
+
+    @include breakpoint(tablet){
+      justify-content: left;
+      margin-right: .5%;
+      margin-bottom: 0;
+      flex: 1;
+      border-radius: 0;
+    }
 
     &:first-child {
-      border-radius: $card-border-radius 0 0 $card-border-radius;
+      @include breakpoint(tablet){
+        border-radius: $card-border-radius 0 0 $card-border-radius;
+      }
     }
 
     &:last-child {
-      margin-right: 0;
-      border-radius: 0 $card-border-radius $card-border-radius 0;
+      margin-bottom: 0;
+      @include breakpoint(tablet){
+        margin-right: 0;
+        margin-bottom: 0;
+        border-radius: 0 $card-border-radius $card-border-radius 0;
+      }
     }
 
     &--md {
-      padding: 0 $card-md-padding-horz;
-      height: $card-md-height;
+      padding: $card-md-padding-vert ($card-md-padding-horz * .3);
+      width: 100%;
+
+      @include breakpoint(landscape){
+        width: 80%;
+      }
+
+      @include breakpoint(tablet){
+        padding: 0 $card-md-padding-horz;
+        height: $card-md-height;
+        width: auto;
+      }
     }
 
     &--with-hover {
@@ -40,10 +74,15 @@
 
     &-header {
       font: {
-        size: $card-header-size;
+        size: ($card-header-size * .8);
         weight: $bold-font-weight;
       }
       line-height: 1.59;
+
+      @include breakpoint(landscape){
+        font-size: $card-header-size;
+        line-height: 1.59;
+      }
     }
   }
 }

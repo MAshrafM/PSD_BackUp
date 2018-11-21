@@ -1,5 +1,13 @@
 .page-block{
-  padding: $page-block-padding-vert 0;
+  padding: ($page-block-padding-vert * .4) 0;
+
+  @include breakpoint(landscape){
+    padding: ($page-block-padding-vert * .6) 0;
+  }
+
+  @include breakpoint(tablet){
+    padding: $page-block-padding-vert 0;
+  }
 
   &--accent-bg-light{
     background-color: $page-block-accent-bg-light;
