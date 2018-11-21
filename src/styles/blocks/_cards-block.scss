@@ -1,0 +1,37 @@
+.cards-block {
+  display: flex;
+  justify-content: center;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    margin-right: .5%;
+    flex: 1;
+
+    &:first-child {
+      border-radius: $card-border-radius 0 0 $card-border-radius;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      border-radius: 0 $card-border-radius $card-border-radius 0;
+    }
+
+    &--md {
+      padding: 0 $card-md-padding-horz;
+      height: $card-md-height;
+    }
+  
+    &-icon {
+      margin-right: $card-icon-offset-horz;
+    }
+    
+    &-header {
+      font: {
+        size: $card-header-size;
+        weight: $bold-font-weight;
+      }
+      line-height: 1.59;
+    }
+  }
+}

@@ -73,6 +73,7 @@ $icon-bg-color: $light-font-color-prim;
 $icon-bg-bg: $accent-settings-color-sec;
 $icon-bg-dimensions: 56px;
 $icon-dimensions-sm: 25px;
+$icon-dimensions-md: 45px;
 $icon-dimensions-xl: 340px;
 // coming-soon
 $coming-soon-overlay-bg: rgba($dark-settings-color, .7);
@@ -188,7 +189,7 @@ $page-header-col-2x-wrapper-width: 545px;
 $page-header-top-offset-vert: ($top-header-height + $header-nav-height);
 // Main > Page Block
 $page-block-padding-vert: 127px;
-$page-block-aacent-bg-light: $light-bg-color-sec;
+$page-block-accent-bg-light: $light-bg-color-sec;
 // Main > Page Block > Header Block
 $header-block-offset-vert: 71px;
 $header-block-header-size: $big-font-size-delta;
@@ -196,3 +197,10 @@ $header-block-header-decorated-width: 274px;
 $header-block-header-decoration-bg: $accent-settings-color;
 $header-block-header-decorated-padding-horz: 23px;
 $header-block-text-size: $small-font-size;
+// Main Page Block > Cards Block
+$card-bg: $light-settings-color;
+$card-border-radius: 10px;
+$card-md-padding-horz: 45px;
+$card-md-height: 125px;
+$card-icon-offset-horz: 25px;
+$card-header-size: ($small-font-size * 1.1);
