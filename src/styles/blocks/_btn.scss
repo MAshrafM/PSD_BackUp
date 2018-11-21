@@ -2,7 +2,7 @@
   @include transition-mix;
   position: relative;
   display: inline-block;
-  padding: $btn-padding-vert $btn-padding-horz;
+  padding: ($btn-padding-vert * .8) ($btn-padding-horz * .7);
    font: {
     size: $btn-default-size;
     weight: $bold-font-weight;
@@ -16,7 +16,11 @@
   border-radius: $btn-border-radius;
   overflow: visible;
 
-  &:after {
+  @include breakpoint(tablet){
+    padding: $btn-padding-vert $btn-padding-horz;
+  }
+  
+  &::after {
     @include position-absolute($top: 0, $left: 0);
     @include transition-mix;
     content: attr(data-btn-content);
