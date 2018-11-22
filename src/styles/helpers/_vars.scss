@@ -3,6 +3,8 @@ $_white: #fff;
 $_white-smoke: #d8d8d8;
 $_pinkish-orange: #d37055;
 $_pale-red: #b05442;
+$_umbra-red: #7f2822;
+$_asparagus-green: #69984b;
 $_charcoal-grey: #3c3940;
 $_pale-grey: #f1f0f9;
 $_bluey-grey: #8991b2;
@@ -24,7 +26,11 @@ $accent-settings-color: $_pinkish-orange;
 $accent-settings-color-sec: $_pale-red;
 $light-settings-color: $_white;
 $light-settings-color-sec: $_water-blue;
+$light-settings-color-delta: $_pale-grey;
 $dark-settings-color: $_black;
+$dark-settings-color-sec: $_midnight-blue;
+$success-settings-color: $_asparagus-green;
+$danger-settings-color: $_umbra-red;
 
 // Font Colors
 $accent-font-color: $_pinkish-orange;
@@ -74,6 +80,7 @@ $icon-bg-bg: $accent-settings-color-sec;
 $icon-bg-dimensions: 56px;
 $icon-dimensions-sm: 25px;
 $icon-dimensions-md: 45px;
+$icon-dimensions-lg: 71px;
 $icon-dimensions-xl: 340px;
 // coming-soon
 $coming-soon-overlay-bg: rgba($dark-settings-color, .7);
@@ -199,7 +206,7 @@ $header-block-header-decorated-padding-horz: 23px;
 $header-block-header-decorated-padding-vert: 10px;
 $header-block-header-decorated-vert-offset: 30px;
 $header-block-text-size: $small-font-size;
-// Main Page Block > Cards Block
+// Main > Page Block > Cards Block
 $card-bg: $light-settings-color;
 $card-border-radius: 10px;
 $card-md-padding-horz: 45px;
@@ -208,3 +215,21 @@ $card-md-height: 125px;
 $card-icon-offset-horz: 25px;
 $card-header-size: ($small-font-size * 1.1);
 $card-icon-accent-color: $accent-settings-color;
+// Main > Page Block > How It Works
+$how-works-border-color: $dark-settings-color-sec;
+$how-works-border-width: 3px;
+$how-works-border: $how-works-border-width dotted $how-works-border-color;
+$how-works-border-radius: 60px;
+$how-works-icon-dotted-dimensions: 127px;
+$how-works-icon-dotted-bg: $light-settings-color-delta;
+$how-works-icon-filled-dimensions: 54px;
+$how-works-icon-filled-bg-success: $success-settings-color;
+$how-works-icon-filled-color: $light-settings-color;
+$how-works-icon-filled-bg-danger: $danger-settings-color;
+$how-works-content-width: 310px;
+$how-works-content-offset: 28px;
+$how-works-header-size: ($small-font-size-sec * 1.07);
+$how-works-header-small-size: $default-font-size;
+$how-works-header-offset-vert: 9px;
+$how-works-block-bg: $light-settings-color;
+$how-works-block-padding: 12px;
