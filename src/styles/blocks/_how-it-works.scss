@@ -1,6 +1,13 @@
 .how-it-works{
-  width: calc(100% - #{$how-works-icon-dotted-dimensions});
-  margin: $how-works-icon-dotted-dimensions 0;
+  
+  @include breakpoint(tablet){
+    width: calc(100% - #{$how-it-works-icon-dotted-dimensions-mob});
+    margin: $how-it-works-icon-dotted-dimensions auto;
+  }
+
+  @include breakpoint(desktop){
+    width: calc(100% - #{$how-it-works-icon-dotted-dimensions});
+  }
 
   &__row{
     position: relative;
@@ -8,75 +15,143 @@
     flex-direction: column;
 
     &::after{
+      @include position-absolute($top: 0, $left: 50%);
       content: '';
       display: block;
-      width: calc(50% - #{$how-works-border-width});
-      border: $how-works-border;
+      width: $how-it-works-border-width;
+      transform: translateX(-50%);
+      border-left: $how-it-works-border;
       height: 100%;
       z-index: 1;
+
+      @include breakpoint(tablet){
+        width: calc(50% - #{$how-it-works-border-width});
+        transform: translateX(0);
+        border: $how-it-works-border;
+      }
     }
 
     &:nth-child(odd){
       &::after{
-        @include position-absolute($top: 0, $right: 0);
-        border-left: none;
-        border-radius: 0 $how-works-border-radius $how-works-border-radius 0;
+        @include breakpoint(tablet){
+          @include position-absolute($top: 0, $right: 0);
+          border-left: none;
+          border-radius: 0 $how-it-works-border-radius $how-it-works-border-radius 0;
+        }
       }
 
       .how-it-works__block{
-        flex-direction: row-reverse;
+        @include breakpoint(tablet){
+          flex-direction: row-reverse;
+        }
 
         &:nth-child(1) {
-          transform: translateY(-50%);
+          margin-top: 0;
+          @include breakpoint(tablet){
+            transform: translateY(-50%);
+          }
         }
 
         &:nth-child(2) {
-          align-self: flex-end;
-          transform: translate(($how-works-icon-dotted-dimensions / 2), -25%);
+          @include breakpoint(tablet){
+            align-self: flex-end;
+            transform: translate(($how-it-works-icon-dotted-dimensions-mob / 2), -25%);
+          }
+
+          @include breakpoint(desktop){
+            transform: translate(($how-it-works-icon-dotted-dimensions / 2), -25%);
+          }
         }
 
         &:nth-child(3) {
-          align-self: flex-end;
-          transform: translate((- ($how-works-icon-filled-dimensions / 2)), 50%);
+          @include breakpoint(tablet){
+            align-self: flex-end;
+            transform: translate((- ($how-it-works-icon-filled-dimensions / 2)), 50%);
+          }
         }
       }
 
       .how-it-works__content{
-        margin-right: $how-works-content-offset;
+
+        @include breakpoint(landscape){
+          margin-left: $how-it-works-content-offset;
+        }
+        
+        @include breakpoint(tablet){
+          margin-left: 0;
+          margin-right: ($how-it-works-content-offset / 2);
+        }
+
+        @include breakpoint(desktop){
+          margin-right: $how-it-works-content-offset;
+        }
       }
 
       .how-it-works__header{
-        transform: translateY(20%);        
+        @include breakpoint(tablet){
+          transform: translateY(20%); 
+        }       
       }
     }
 
     &:nth-child(even){
-      margin-top: $how-works-border-width;
-
+      @include breakpoint(tablet){
+        margin-top: $how-it-works-border-width;
+      }
+      
       &::after{
-        @include position-absolute($top: 0, $left: 0);
-        border-right: none;
-        border-radius: $how-works-border-radius 0 0 $how-works-border-radius;
+        @include breakpoint(tablet){
+          @include position-absolute($top: 0, $left: 0);
+          border-right: none;
+          border-radius: $how-it-works-border-radius 0 0 $how-it-works-border-radius;
+        }
       }
 
       .how-it-works__block {
         &:nth-child(1) {
-          transform: translate(( - ($how-works-icon-dotted-dimensions / 2)), 75%);
+          @include breakpoint(tablet){
+            transform: translate(( - ($how-it-works-icon-dotted-dimensions-mob / 2)), 75%);
+          }
+
+          @include breakpoint(desktop){
+            transform: translate(( - ($how-it-works-icon-dotted-dimensions / 2)), 75%);
+          }
         }
 
         &:nth-child(2) {
-          align-self: flex-start;
-          transform: translate(($how-works-icon-filled-dimensions / 2), calc(300% - 5 * #{$how-works-block-padding}));
+          @include breakpoint(tablet){
+            align-self: flex-start;
+            transform: translate(($how-it-works-icon-filled-dimensions / 2), calc(300% - 5 * #{$how-it-works-block-padding}));
+          }
         }
 
         &:nth-child(3) {
-          align-self: flex-end;
-          transform: translate( ( - $how-works-icon-dotted-dimensions), 50%);
+          margin-bottom: 0;
+
+          @include breakpoint(tablet){
+            align-self: flex-end;
+            transform: translate( ( - $how-it-works-icon-dotted-dimensions-mob), 50%);
+          }
+
+          @include breakpoint(desktop){
+            transform: translate( ( - $how-it-works-icon-dotted-dimensions), 50%);
+          }
         }
       }
 
       .how-it-works__content{
-        margin-left: $how-works-content-offset;
+
+        @include breakpoint(landscape){
+          margin-left: $how-it-works-content-offset;
+        }
+        
+        @include breakpoint(tablet){
+          margin-left: ($how-it-works-content-offset / 2);
+        }
+
+        @include breakpoint(desktop){
+          margin-left: $how-it-works-content-offset;
+        }
       }
     }
   }
@@ -85,60 +160,102 @@
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 50%;
+    text-align: center;
+    flex-direction: column;
+    margin: $how-it-works-block-offset-vert 0;
+    padding: $how-it-works-block-padding 0;
+    background-color: $how-it-works-block-bg;
     z-index: 3;
 
+    @include breakpoint(landscape){
+      flex-direction: row;
+      text-align: left;
+    }
+
+    @include breakpoint(tablet){
+      max-width: 50%;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+
     &--bg-color {
-      padding: $how-works-block-padding;
-      background-color: $how-works-block-bg;
+      justify-content: center;
+      background-color: $how-it-works-block-bg;
+
+      @include breakpoint(tablet){
+        padding: $how-it-works-block-padding;
+      }
     }
   }
 
   &__icon{
     flex-shrink: 0;
     border-radius: 50%;
+    margin-bottom: $how-it-works-icon-offset-vert;
+
+    @include breakpoint(landscape){
+      margin-bottom: 0;
+    }
 
     &--dotted{
       display: flex;
       align-items: center;
       justify-content: center;
-      width: $how-works-icon-dotted-dimensions;
-      height: $how-works-icon-dotted-dimensions;
-      background-color: $how-works-icon-dotted-bg;
-      border: $how-works-border;
+      width: $how-it-works-icon-dotted-dimensions-mob;
+      height: $how-it-works-icon-dotted-dimensions-mob;
+      background-color: $how-it-works-icon-dotted-bg;
+      border: $how-it-works-border;
+
+      @include breakpoint(desktop){
+        width: $how-it-works-icon-dotted-dimensions;
+        height: $how-it-works-icon-dotted-dimensions;
+      }
+
+      .icon{
+        max-width: 60%;
+        max-height: 60%;
+
+        @include breakpoint(desktop){
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
     }
 
     &--filled {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: $how-works-icon-filled-dimensions;
-      height: $how-works-icon-filled-dimensions;
+      width: $how-it-works-icon-filled-dimensions;
+      height: $how-it-works-icon-filled-dimensions;
 
       &-success {
-        background-color: $how-works-icon-filled-bg-success;
+        background-color: $how-it-works-icon-filled-bg-success;
       }
 
       &-danger {
-        background-color: $how-works-icon-filled-bg-danger;
+        background-color: $how-it-works-icon-filled-bg-danger;
       }
     }
   }
 
   &__content{
-    max-width: $how-works-content-width;
+    @include breakpoint(tablet){
+      max-width: $how-it-works-content-width;
+    }
   }
 
   &__header{
-    margin-bottom: $how-works-header-offset-vert;
+    margin-bottom: $how-it-works-header-offset-vert;
     font: {
       weight: $bold-font-weight;
-      size: $how-works-header-size;
+      size: $how-it-works-header-size;
     }
 
     &--small{
       margin-bottom: 0;
-      font-size: $how-works-header-small-size;
+      font-size: $how-it-works-header-small-size;
     }
   }
 
