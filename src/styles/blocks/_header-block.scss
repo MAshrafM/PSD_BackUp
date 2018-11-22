@@ -24,7 +24,6 @@
 
     &--decorated{
       padding-bottom: $header-block-header-decorated-padding-vert;
-      margin-bottom: $header-block-header-decorated-vert-offset;
       font-size: ($header-block-header-size * .7);
       text-align: center;
 
@@ -58,6 +57,7 @@
   }
 
   &__text{
+    margin-top: $header-block-text-vert-offset;
     font: {
       size: $header-block-text-size;
       weight: $medium-font-weight;
