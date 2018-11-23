@@ -12,4 +12,12 @@
   &--accent-bg-light{
     background-color: $page-block-accent-bg-light;
   }
+
+  &__subblock{
+    margin-bottom: $page-block-subblock-offset-vert;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 }
