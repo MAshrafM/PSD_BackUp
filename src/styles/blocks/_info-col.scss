@@ -1,0 +1,38 @@
+.info-col{
+  display: flex;
+  justify-content: space-between;
+
+  &__block{
+
+    &--sm{
+      width: 30%;
+    }
+  }
+
+  &__header{
+
+    &--with-icon{
+      display: flex;
+      align-items: center;
+    }
+
+    &-h{
+      font: {
+        size: $info-col-header-size;
+        weight: $bold-font-weight;
+      }
+    }
+  }
+
+  &__icon{
+    margin-right: $info-col-header-icon-offset-vert;
+  }
+
+  &__content{
+    margin-top: $info-col-content-offset-sm;
+  }
+
+  &__text{
+    color: $info-col-text-color;
+  }
+}
