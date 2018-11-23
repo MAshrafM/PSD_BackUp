@@ -19,12 +19,15 @@
   &__header{
     position: relative;
     flex-shrink: 0;
-    font-size: $header-block-header-size;
+    font-size: ($header-block-header-size *.7);
     text-align: center;
+
+    @include breakpoint(tablet){
+      font-size: $header-block-header-size;
+    }
 
     &--decorated{
       padding-bottom: $header-block-header-decorated-padding-vert;
-      font-size: ($header-block-header-size * .7);
       text-align: center;
 
       @include breakpoint(tablet){
@@ -68,10 +71,15 @@
   &__subheader{
     margin-top: $header-block-subheader-offset-vert;
     font: {
-      size: $header-block-subheader-size;
+      size: ($header-block-subheader-size *.7);
       weight: $medium-font-weight;
     }
     color: $header-block-subheader-color-default;
+    text-align: center;
+
+    @include breakpoint(tablet){
+      font-size: $header-block-subheader-size;
+    }
   }
 
   .page-block, .page-block--accent-bg-light{

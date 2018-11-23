@@ -14,7 +14,11 @@
   }
 
   &__subblock{
-    margin-bottom: $page-block-subblock-offset-vert;
+    margin-bottom: ($page-block-subblock-offset-vert * .7);
+
+    @include breakpoint(tablet){
+      margin-bottom: $page-block-subblock-offset-vert;
+    }
 
     &:last-child{
       margin-bottom: 0;
