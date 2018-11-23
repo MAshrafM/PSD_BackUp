@@ -23,22 +23,10 @@
       margin-right: .5%;
       margin-bottom: 0;
       flex: 1;
-      border-radius: 0;
     }
 
-    &:first-child {
-      @include breakpoint(tablet){
-        border-radius: $card-border-radius 0 0 $card-border-radius;
-      }
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-      @include breakpoint(tablet){
-        margin-right: 0;
-        margin-bottom: 0;
-        border-radius: 0 $card-border-radius $card-border-radius 0;
-      }
+    &--full{
+      width: 100%;
     }
 
     &--md {
@@ -53,6 +41,28 @@
         padding: 0 $card-md-padding-horz;
         height: $card-md-height;
         width: auto;
+      }
+    }
+
+    &--half-border-radius{
+      @include breakpoint(tablet){
+        border-radius: 0;
+      }
+
+      &:first-child{
+        @include breakpoint(tablet){
+          border-radius: $card-border-radius 0 0 $card-border-radius;
+        }
+      }
+
+      &:last-child{
+        margin-bottom: 0;
+
+        @include breakpoint(tablet){
+          margin-right: 0;
+          margin-bottom: 0;
+          border-radius: 0 $card-border-radius $card-border-radius 0;
+        }
       }
     }
 
