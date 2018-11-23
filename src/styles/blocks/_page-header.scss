@@ -52,31 +52,6 @@
     }
   }
 
-  &__btn-part{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: $page-header-btn-part-offset-vert;
-
-    @include breakpoint(landscape){
-      flex-direction: row;
-    }
-  }
-
-  &__btn{
-    margin-bottom: $page-header-btn-offset;
-    margin-right: 0;
-
-    &:last-child{
-      margin: 0;
-    }
-
-    @include breakpoint(landscape){
-      margin-right: $page-header-btn-offset;
-      margin-bottom: 0;
-    }
-  }
-
   &__image{
     display: none;
 
