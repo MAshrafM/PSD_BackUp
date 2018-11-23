@@ -27,6 +27,7 @@
 
     &--full{
       width: 100%;
+      padding: $card-full-padding-vert $card-full-padding-horz;
     }
 
     &--md {
@@ -77,6 +78,10 @@
         }
       }
     }
+
+    &--space-between {
+      justify-content: space-between;
+    }
   
     &-icon {
       margin-right: $card-icon-offset-horz;
@@ -92,6 +97,14 @@
       @include breakpoint(landscape){
         font-size: $card-header-size;
         line-height: 1.59;
+      }
+    }
+
+    &-text{
+      font-weight: $medium-font-weight;
+
+      &--xl{
+        max-width: $card-text-width-xl;
       }
     }
   }
