@@ -64,4 +64,19 @@
     }
     line-height: 1.67;
   }
+
+  &__subheader{
+    margin-top: $header-block-subheader-offset-vert;
+    font: {
+      size: $header-block-subheader-size;
+      weight: $medium-font-weight;
+    }
+    color: $header-block-subheader-color-default;
+  }
+
+  .page-block, .page-block--accent-bg-light{
+    .header-block__subheader{
+      color: $header-block-subheader-color-default; 
+    }
+  }
 }
