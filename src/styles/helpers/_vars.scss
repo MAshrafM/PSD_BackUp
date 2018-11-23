@@ -29,6 +29,7 @@ $light-settings-color-sec: $_water-blue;
 $light-settings-color-delta: $_pale-grey;
 $dark-settings-color: $_black;
 $dark-settings-color-sec: $_midnight-blue;
+$dark-settings-color-delta: $_charcoal-grey;
 $success-settings-color: $_asparagus-green;
 $danger-settings-color: $_umbra-red;
 
@@ -64,6 +65,7 @@ $checkbox-checked-bg: $accent-settings-color;
 $btn-default-color: $light-font-color-prim;
 $btn-default-border-color: $light-settings-color;
 $btn-default-size: ($extra-small-font-size * 1.07);
+$btn-min-width: 181px;
 $btn-padding-vert: 12px;
 $btn-padding-horz: 44px;
 $btn-border-radius: $btn-padding-horz;
@@ -73,6 +75,8 @@ $btn-big-font-size: $small-font-size-sec;
 $btn-big-padding-vert: 16px;
 $btn-accent-bg: $accent-settings-color;
 $btn-accent-color: $light-font-color-prim;
+$btn-light-border: rgba($dark-settings-color-delta, .15);
+$btn-light-bg: rgba($light-settings-color, .35);
 // btn-block
 $btn-block-offset-vert: 43px;
 // icon

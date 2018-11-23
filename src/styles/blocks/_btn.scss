@@ -15,6 +15,8 @@
   border: 1px solid $btn-default-border-color;
   border-radius: $btn-border-radius;
   overflow: visible;
+  min-width: $btn-min-width;
+  text-align: center;
 
   @include breakpoint(tablet){
     padding: $btn-padding-vert $btn-padding-horz;
@@ -45,6 +47,12 @@
       opacity: 1;
       visibility: visible;
     }
+  }
+
+  &--light-color {
+    color: inherit;
+    border-color: $btn-light-border;
+    background-color: $btn-light-bg;
   }
 
   &--not-uppercase{
