@@ -1,0 +1,47 @@
+.block-with-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--img-right {
+    flex-direction: row-reverse;
+  }
+
+  &__image{
+    display: none;
+
+    @include breakpoint(landscape){
+      display: inline-flex;
+      width: 20%;
+    }
+
+    @include breakpoint(tablet){
+      width:auto;
+    }
+  }
+
+  &__header{
+    margin-bottom: $block-with-image-header-offset-vert;
+  }
+
+  &__content-block {
+
+    @include breakpoint(landscape){
+      max-width: 71%;
+    }
+
+    @include breakpoint(tablet){
+      max-width: 51%;
+    }
+  }
+
+  &__content{
+    font-size: ($block-with-image-content-size * .8);
+    line-height: 1.42;
+    text-align: center;
+
+    @include breakpoint(tablet){
+      font-size: $block-with-image-content-size;
+    }
+  }
+}
