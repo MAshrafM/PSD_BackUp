@@ -17,6 +17,7 @@ $_indigo-blue: #3a1a91;
 $_indigo-blue2 : #363699;
 $_persian-indigo: #272875;
 $_tory-blue: #31318c;
+$_tory-blue2: #2e318c;
 $_midnight-blue: #191e5a;
 $_midnight-blue-dark: #131744;
 $_black: #000;
@@ -52,6 +53,7 @@ $dark-bg-color-sec: $_tory-blue;
 $dark-bg-color-over: $_midnight-blue;
 $dark-bg-color-omega: $_midnight-blue-dark;
 $dark-bg-color-eps: $_indigo-blue2;
+$dark-bg-color-delta: $_tory-blue2;
 $light-bg-color: $_white;
 $light-bg-color-sec: $_pale-grey;
 
@@ -203,6 +205,7 @@ $page-header-top-offset-vert: ($top-header-height + $header-nav-height);
 // Main > Page Block
 $page-block-padding-vert: 127px;
 $page-block-accent-bg-light: $light-bg-color-sec;
+$page-block-accent-bg-dark: $dark-bg-color-delta;
 $page-block-subblock-offset-vert: 70px;
 // Main > Page Block > Header Block
 $header-block-offset-vert: 71px;

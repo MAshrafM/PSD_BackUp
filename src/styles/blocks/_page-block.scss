@@ -13,6 +13,10 @@
     background-color: $page-block-accent-bg-light;
   }
 
+  &--accent-bg-dark{
+    background-color: $page-block-accent-bg-dark;
+  }
+
   &__subblock{
     margin-bottom: ($page-block-subblock-offset-vert * .7);
 
