@@ -179,4 +179,38 @@
       }
     }
   }
+
+  .block-with-image__image {
+    @include transition-mix($duration: .35s);
+    position: relative;
+
+    &.js-loading-effect {
+      @include breakpoint(tablet){
+        left: -30px;
+        opacity: 0;
+      }
+    }
+
+    &.js-loaded-element {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  .block-with-image__content-block {
+    @include transition-mix($duration: .35s);
+    position: relative;
+
+    &.js-loading-effect {
+      @include breakpoint(tablet){
+        left: 30px;
+        opacity: 0;
+      }
+    }
+
+    &.js-loaded-element {
+      left: 0;
+      opacity: 1;
+    }
+  }
 }
