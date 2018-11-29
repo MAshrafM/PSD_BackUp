@@ -28,4 +28,45 @@
       opacity: 1;
     }
   }
+
+  .header-block--space-between{
+    @include transition-mix($duration: .35s);
+    @include breakpoint(tablet) {
+      opacity: 0;
+    }
+
+    &.js-loaded-element {
+      opacity: 1;
+    }
+
+    & + .header-block__text {
+      @include transition-mix($duration: .35s, $delay: .35s);
+      @include breakpoint(tablet) {
+        opacity: 0;
+      }
+
+      &.js-loaded-element {
+        opacity: 1;
+      }
+    }
+  }
+
+  .cards-block{
+    @include transition-mix($duration: .35s, $timing: cubic-bezier(0, 0.94, 0.52, 1.24));
+    position: relative;
+
+    @include breakpoint(tablet){
+      top: 50px;
+      opacity: 0;
+    }
+
+    &.solutions-cards {
+      transition-delay: .7s;
+    }
+    
+    &.js-loaded-element{
+      top: 0;
+      opacity: 1;
+    }
+  }
 }
