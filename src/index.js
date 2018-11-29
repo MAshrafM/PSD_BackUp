@@ -9,3 +9,4 @@ import './scripts/nav-dropdown.js';
 import './scripts/nav-mobile.js';
 import './scripts/scrollbars.js';
 import './scripts/form-placeholder';
+import './scripts/scroll-animation';

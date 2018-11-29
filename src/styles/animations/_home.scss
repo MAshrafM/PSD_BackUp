@@ -1,0 +1,31 @@
+.home{
+  &__header-content{
+    @include transition-mix($duration: .35s);
+    position: relative;
+
+    @include breakpoint(tablet){
+      left: 30px;
+      opacity: 0;
+    }
+
+    &.js-loaded-element{
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  &__header-img{
+    @include transition-mix($duration: .35s);
+    position: relative;
+
+    @include breakpoint(tablet){
+      left: -30px;
+      opacity: 0;
+    }
+
+    &.js-loaded-element{
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
