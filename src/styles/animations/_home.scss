@@ -213,4 +213,32 @@
       opacity: 1;
     }
   }
+
+  .footer-contact__text {
+    @include transition-mix($duration: .35s);
+
+    &.js-loading-effect {
+      @include breakpoint(tablet){
+        opacity: 0;
+      }
+    }
+
+    &.js-loaded-element{
+      opacity: 1;
+    }
+  }
+
+  .footer-contact__form{
+    @include transition-mix($duration: .35s, $delay: .35s);
+
+    &.js-loading-effect {
+      @include breakpoint(tablet) {
+        opacity: 0;
+      }
+    }
+    
+    &.js-loaded-element {
+      opacity: 1;
+    }
+  }
 }
