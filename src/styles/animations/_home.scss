@@ -29,10 +29,13 @@
     }
   }
 
-  .header-block--space-between{
+  .header-block__header--decorated{
     @include transition-mix($duration: .35s);
-    @include breakpoint(tablet) {
-      opacity: 0;
+
+    &.js-loading-effect{
+      @include breakpoint(tablet) {
+        opacity: 0;
+      }
     }
 
     &.js-loaded-element {
@@ -41,8 +44,11 @@
 
     & + .header-block__text {
       @include transition-mix($duration: .35s, $delay: .35s);
-      @include breakpoint(tablet) {
-        opacity: 0;
+
+      &.js-loading-effect{
+        @include breakpoint(tablet) {
+          opacity: 0;
+        }
       }
 
       &.js-loaded-element {
@@ -51,13 +57,31 @@
     }
   }
 
+  .header-block {
+    @include transition-mix;
+
+    &.js-loading-effect {
+      @include breakpoint(tablet){
+        transform: scale(1.3);
+        opacity: 0;
+      }
+    }
+
+    &.js-loaded-element {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
   .cards-block{
     @include transition-mix($duration: .35s, $timing: cubic-bezier(0, 0.94, 0.52, 1.24));
     position: relative;
 
-    @include breakpoint(tablet){
-      top: 50px;
-      opacity: 0;
+    &.js-loading-effect{
+      @include breakpoint(tablet){
+        top: 50px;
+        opacity: 0;
+      }
     }
 
     &.solutions-cards {
@@ -99,6 +123,58 @@
       span {
         @include breakpoint(tablet){
           animation: how-it-works-icon .5s linear 0s 1 forwards;
+        }
+      }
+    }
+  }
+
+  .info-col__header--with-icon{
+    .info-col__icon{
+      @include transition-mix($delay: .2s);
+      position: relative;
+
+      &.js-loading-effect{
+        @include breakpoint(tablet){
+          left: -30px;
+          opacity: 0;
+        }
+      }
+
+      &.js-loaded-element{
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+
+  .btn-block{
+
+    &.js-loading-effect{
+      .btn-block__btn{
+        @include transition-mix($duration: .25s);
+        position: relative;
+
+        &:nth-child(1) {
+          @include breakpoint(tablet){
+            left: -30px;
+            opacity: 0;
+          }
+        }
+
+        &:nth-child(2){
+          @include breakpoint(tablet){
+            left: 30px;
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    &.js-loaded-element{
+      .btn-block__btn{
+        &:nth-child(1), &:nth-child(2){
+          left: 0;
+          opacity: 1;
         }
       }
     }
