@@ -63,10 +63,44 @@
     &.solutions-cards {
       transition-delay: .7s;
     }
-    
+
     &.js-loaded-element{
       top: 0;
       opacity: 1;
+    }
+  }
+
+  @keyframes how-it-works-icon {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+     50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+     100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .how--it-works__icon{
+    &.js-loading-effect{
+      span {
+        @include breakpoint(tablet){
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
+    }
+
+    &.js-loaded-element {
+      span {
+        @include breakpoint(tablet){
+          animation: how-it-works-icon .5s linear 0s 1 forwards;
+        }
+      }
     }
   }
 }
