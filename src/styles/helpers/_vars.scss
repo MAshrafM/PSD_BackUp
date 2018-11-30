@@ -84,9 +84,12 @@ $btn-block-offset-vert: 43px;
 // icon
 $icon-font-big-size: 49px;
 $icon-font-size: 36px;
+$icon-font-xl-size: $extra-big-font-size-sec;
 $icon-bg-color: $light-font-color-prim;
 $icon-bg-bg: $accent-settings-color-sec;
+$icon-bg-bg-accent: $accent-settings-color;
 $icon-bg-dimensions: 56px;
+$icon-bg-xl-dimensions: 81px;
 $icon-dimensions-sm: 25px;
 $icon-dimensions-md: 45px;
 $icon-dimensions-lg: 71px;
@@ -196,12 +199,14 @@ $page-header-padding-vert: 90px;
 $page-header-header-color: $light-font-color-prim;
 $page-header-h-size: $big-font-size-sec;
 $page-header-content-offset-vert: 24px;
+$page-header-content-offset-vert-sm: 8px;
 $page-header-text-size: $small-font-size-omega;
 $page-header-text-color: $light-font-color-eps;
 $page-header-text-p-offset-vert: 20px;
 $page-header-btn-offset: 12px;
-$page-header-col-2x-wrapper-width: 545px;
+$page-header-wrapper-width: 545px;
 $page-header-top-offset-vert: ($top-header-height + $header-nav-height);
+$page-header-image-iconed-offset-horz: 50px;
 // Main > Page Block
 $page-block-padding-vert: 127px;
 $page-block-accent-bg-light: $light-bg-color-sec;
