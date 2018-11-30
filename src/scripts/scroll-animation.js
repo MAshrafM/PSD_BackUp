@@ -17,7 +17,7 @@ $(document).scroll(() => {
     let loadedElements = $('.js-loading-effect');
     loadedElements.each(function(){
       let currentElement = $(this),
-          distanceFromTop = $(document).scrollTop() + $(window).height() - 250,
+          distanceFromTop = $(document).scrollTop() + $(window).height() - 100,
           elementDistance = currentElement.offset().top;
 
       if(distanceFromTop > elementDistance){
