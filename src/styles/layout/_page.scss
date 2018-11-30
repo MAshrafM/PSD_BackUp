@@ -1,7 +1,3 @@
-.page {
-  margin-top: ($page-top-offset-vert * .5);
-
-  @include breakpoint(tablet) {
-    margin-top: $page-top-offset-vert;
-  }
+#overview-page{
+  display: none;
 }

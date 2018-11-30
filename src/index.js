@@ -3,6 +3,7 @@ import './vendor/perfect-scroll/perfect-scrollbar.scss';
 import "./styles/main.scss";
 
 import './vendor/fox-holder/fox-holder.js';
+import './scripts/page-toggle';
 import './scripts/login-btn.js';
 import './scripts/coming-soon.js';
 import './scripts/nav-dropdown.js';
