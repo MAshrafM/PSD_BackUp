@@ -16,6 +16,14 @@
     }
   }
 
+  &--no-margin{
+    margin-bottom: 0;
+  }
+
+  &--align-left{
+    align-items: flex-start;
+  }
+
   &__header{
     position: relative;
     flex-shrink: 0;
@@ -66,6 +74,10 @@
       weight: $medium-font-weight;
     }
     line-height: 1.67;
+
+    &--sm{
+      max-width: $header-block-text-sm-width;
+    }
   }
 
   &__subheader{

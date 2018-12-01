@@ -9,6 +9,13 @@
     padding: $page-block-padding-vert 0;
   }
 
+  &--space-between{
+    .page-block__inner{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &--accent-bg-light{
     background-color: $page-block-accent-bg-light;
   }
@@ -27,5 +34,9 @@
     &:last-child{
       margin-bottom: 0;
     }
+  }
+
+  &__subcol{
+    max-width: 45%;
   }
 }
