@@ -12,7 +12,11 @@
   &--space-between{
     .page-block__inner{
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      @include breakpoint(tablet){
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
   }
 
@@ -37,7 +41,23 @@
   }
 
   &__subcol{
-    width: 45%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $page-subcol-offset-vert;
     flex-shrink: 0;
+
+    @include breakpoint(landscape){
+      width: 85%;
+    }
+
+    @include breakpoint(tablet){
+      width: 45%;
+      margin: 0;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }

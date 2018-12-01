@@ -21,7 +21,9 @@
   }
 
   &--align-left{
-    align-items: flex-start;
+    @include breakpoint(tablet){
+      align-items: flex-start;
+    }
   }
 
   &__header{
@@ -76,7 +78,9 @@
     line-height: 1.67;
 
     &--sm{
-      max-width: $header-block-text-sm-width;
+      @include breakpoint(tablet){
+        max-width: $header-block-text-sm-width;
+      }
     }
   }
 
