@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 
   @include breakpoint(tablet){
     flex-direction: row;
@@ -17,6 +18,7 @@
     flex: 1;
     background-color: $card-bg;
     border-radius: $card-border-radius;
+    cursor: pointer;
 
     @include breakpoint(tablet){
       justify-content: left;
@@ -33,6 +35,9 @@
       flex-direction: column;
       width: 100%;
       padding: $card-full-padding-vert ($card-full-padding-horz * .5);
+      margin-bottom: 1%;
+      margin-right: 0;
+      flex: 0 0 auto;
 
       @include breakpoint(landscape){
         flex-direction: row;
@@ -40,6 +45,10 @@
 
       @include breakpoint(tablet){
         padding: $card-full-padding-vert $card-full-padding-horz;
+      }
+
+      &-sm-padding {
+        padding: $card-full-padding-vert-sm $card-full-padding-horz-sm;
       }
     }
 
@@ -110,6 +119,10 @@
       @include breakpoint(landscape){
         font-size: $card-header-size;
         line-height: 1.59;
+      }
+
+      &--light-font{
+        font-weight: $medium-font-weight;
       }
     }
 
