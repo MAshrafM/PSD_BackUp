@@ -22,4 +22,8 @@
       margin-bottom: 0;
     }
   }
+
+  &--align-left {
+    justify-content: flex-start;
+  }
 }

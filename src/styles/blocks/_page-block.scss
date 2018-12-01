@@ -37,6 +37,7 @@
   }
 
   &__subcol{
-    max-width: 45%;
+    width: 45%;
+    flex-shrink: 0;
   }
 }
