@@ -43,6 +43,7 @@ $light-font-color-prim: $_white;
 $light-font-color-sec: $_white-smoke;
 $light-font-color-over: $_lavender-blue;
 $light-font-color-eps: $_lavender-blue2;
+$light-font-color-delta: $_pale-grey;
 $middle-font-color: $_faded-blue;
 $middle-font-color-sec: $_bluey-grey2;
 $middle-font-color-delta: $_bluey-grey;
@@ -267,3 +268,8 @@ $info-col-offset-bottom: 30px;
 // Main > Page Block > Show Block : Block With Image
 $block-with-image-content-size: $small-font-size-omega;
 $block-with-image-header-offset-vert: 20px;
+// Main: Overview > Page Block > Subnav
+$subnav-bg: $dark-bg-color-prim;
+$subnav-padding-vert: 32px;
+$subnav-item-offset: 64px;
+$subnav-item-color: $light-font-color-delta;

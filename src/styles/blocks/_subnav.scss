@@ -1,0 +1,51 @@
+.subnav{
+  padding: ($subnav-padding-vert * .7) 0;
+  background-color: $subnav-bg;
+
+  @include breakpoint(tablet){
+    padding: $subnav-padding-vert 0;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+
+    @include breakpoint(landscape){
+      flex-direction: row;
+    }
+  }
+
+  &__item{
+    margin-bottom: ($subnav-item-offset / 2.5);
+    font-weight: $bold-font-weight;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: $subnav-item-color;
+
+    @include breakpoint(landscape){
+      margin-right: ($subnav-item-offset / 2);
+      margin-bottom: 0;
+    }
+
+    @include breakpoint(tablet){
+      margin-right: $subnav-item-offset;
+    }
+
+    &:last-child{
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link{
+    @include transition-mix;
+    color: inherit;
+    opacity: .4;
+
+    &:active, &:hover{
+      opacity: 1;
+    }
+  }
+}
