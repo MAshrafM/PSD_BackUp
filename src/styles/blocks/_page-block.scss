@@ -28,6 +28,10 @@
     background-color: $page-block-accent-bg-dark;
   }
 
+  &-alt-bg {
+    background-color: $page-block-accent-bg-dark-alt;
+  }
+
   &__subblock{
     margin-bottom: ($page-block-subblock-offset-vert * .7);
 
