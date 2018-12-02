@@ -5,14 +5,20 @@
   &--col-2x{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
+    @include breakpoint(desktop){
+      justify-content: space-between;
+    }
 
     .list-block__item{
       flex-shrink: 0;
-      width: 50%;
 
-      &:nth-last-child(2){
-        margin-bottom: 0;
+      @include breakpoint(desktop){
+        width: 49%;
+
+        &:nth-last-child(2){
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -21,6 +27,7 @@
     display: flex;
     align-items: center;
     margin-bottom: $list-item-offset-vert;
+    width: 100%;
 
     &:last-child{
       margin-bottom: 0;
@@ -34,6 +41,10 @@
       margin-right: $list-item-icon-offset-horz;
       background: url('../images/checked.svg') 0 50% no-repeat;
       background-size: cover;
+    }
+
+    strong, em{
+      margin-right: 5px;
     }
   }
 }
