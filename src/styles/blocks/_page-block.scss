@@ -42,6 +42,10 @@
     &:last-child{
       margin-bottom: 0;
     }
+
+    &--margin-sm{
+      margin-bottom: $page-block-subblock-offset-vert-sm;
+    }
   }
 
   &__subcol{

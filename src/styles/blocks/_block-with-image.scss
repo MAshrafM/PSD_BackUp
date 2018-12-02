@@ -43,5 +43,13 @@
     @include breakpoint(tablet){
       font-size: $block-with-image-content-size;
     }
+
+    &--align-left {
+      text-align: left;
+    }
+
+    &--sm {
+      font-size: $block-with-image-content-size-sm;
+    }
   }
 }
