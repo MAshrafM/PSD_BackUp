@@ -93,4 +93,14 @@
     background-color: $btn-accent-bg;
     border-color: $btn-accent-bg; 
   }
+
+  &--alt-hover{
+    &:after{
+      color: $btn-hover-color-alt;
+      background-color: $btn-hover-bg-color-alt;
+    }
+    &:hover{
+      border-color: $btn-hover-bg-color-alt;
+    }
+  }
 }
