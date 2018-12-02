@@ -1,0 +1,16 @@
+.powered-by{
+  display: flex;
+  align-items: flex-end;
+
+  &__text{
+    flex-shrink: 0;
+    margin-right: $powered-by-text-offset-horz;
+    font-size: $powered-by-text-size;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  &__img{
+    line-height: 0;
+  }
+}
