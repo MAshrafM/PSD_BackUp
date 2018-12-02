@@ -28,6 +28,7 @@ $accent-settings-color-sec: $_pale-red;
 $light-settings-color: $_white;
 $light-settings-color-sec: $_water-blue;
 $light-settings-color-delta: $_pale-grey;
+$middle-settings-color: $_bluey-grey2;
 $dark-settings-color: $_black;
 $dark-settings-color-sec: $_midnight-blue;
 $dark-settings-color-delta: $_charcoal-grey;
@@ -266,7 +267,9 @@ $how-it-works-block-offset-vert: 30px;
 // Main > Page Block > Why Choose : Info Col
 $info-col-header-icon-offset-vert: 15px;
 $info-col-header-size: $small-font-size-sec;
+$info-col-header-block-offset-vert: 19px;
 $info-col-content-offset-sm: 8px;
+$info-col-content-offset-md: 15px;
 $info-col-text-color: $middle-font-color-sec;
 $info-col-offset-bottom: 30px;
 // Main > Page Block > Show Block : Block With Image
