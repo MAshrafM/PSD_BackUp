@@ -26,10 +26,12 @@
 
   &--accent-bg-dark{
     background-color: $page-block-accent-bg-dark;
+    color: $light-font-color-prim;
   }
 
   &-alt-bg {
     background-color: $page-block-accent-bg-dark-alt;
+    color: $light-font-color-prim;
   }
 
   &__subblock{
