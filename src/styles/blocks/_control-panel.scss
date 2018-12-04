@@ -1,0 +1,48 @@
+.control-panel {
+  padding: $control-panel-padding;
+  border: .5px solid $control-panel-border-color;
+  border-radius: $control-panel-border-radius;
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    width: $control-panel-item-width;
+
+    &.js-active{
+
+      .control-panel__link{
+        color: $control-panel-link-color-hover;
+        background-color: $control-panel-link-active-bg;
+        border-radius: $control-panel-border-radius;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__link{
+    @include transition-mix();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $control-panel-link-padding-vert $control-panel-link-padding-horz;
+    color: $control-panel-link-color;
+    opacity: $control-panel-link-opacity;
+
+    &:hover{
+      color: $control-panel-link-color-hover;
+      opacity: 1;
+    }
+  }
+
+  &__icon{
+    margin-right: $control-panel-icon-offset-horz;
+    line-height: 0;
+  }
+
+  &__text{
+    font-weight: $bold-font-weight;
+  }
+} 
