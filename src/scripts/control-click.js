@@ -1,6 +1,6 @@
 const controlPanelItem = $('.control-panel__item');
 
-controlPanelitem.click(function(e) {
+controlPanelItem.click(function(e) {
   e.preventDefault();
   let currentItem = $(this),
       currentPanelItems = currentItem.siblings();
