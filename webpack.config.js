@@ -76,7 +76,8 @@ module.exports = {
       use: [{
         loader: 'html-loader',
         options: {
-          interpolate: true
+          interpolate: true,
+          attr: ['img:src', 'source:srcset']
         }
       }]
     }
