@@ -3,6 +3,10 @@
   &__icon{
     padding-bottom: $top-link-offset-vert;
     transform: translateY(0);
+
+    svg{
+      fill: $top-icon-color;
+    }
   }
 
   &__link{

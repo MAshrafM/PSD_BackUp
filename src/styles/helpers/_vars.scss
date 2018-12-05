@@ -92,6 +92,7 @@ $btn-block-offset-vert: 43px;
 $icon-font-big-size: 49px;
 $icon-font-size: 36px;
 $icon-font-xl-size: $extra-big-font-size-sec;
+$icon-font-color: $middle-settings-color;
 $icon-bg-color: $light-font-color-prim;
 $icon-bg-bg: $accent-settings-color-sec;
 $icon-bg-bg-accent: $accent-settings-color;
@@ -200,6 +201,7 @@ $footer-nav-link-hover-color: $accent-settings-color-sec;
 // Footer > to top
 $top-link-offset-vert: $footer-nav-list-offset-vert;
 $top-link-size: $footer-nav-item-size;
+$top-icon-color: $accent-settings-color-sec;
 // Main
 $page-top-offset-vert: ($top-header-height + $header-nav-height);
 // Main > Page Header
@@ -284,6 +286,7 @@ $info-col-text-offset-vert: 10px;
 $info-col-offset-bottom: 30px;
 $info-col-offset-bottom-lg: 58px;
 $info-col-icon-offset-horz: 46px;
+$info-col-icon-color: $accent-settings-color-sec;
 // Main > Page Block > Show Block : Block With Image
 $block-with-image-content-size: $small-font-size-omega;
 $block-with-image-content-size-sm: $small-font-size;

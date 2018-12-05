@@ -237,6 +237,12 @@
       &-danger {
         background-color: $how-it-works-icon-filled-bg-danger;
       }
+
+      .icon{
+        svg{
+          fill: $how-it-works-icon-filled-color;
+        }
+      }
     }
   }
 

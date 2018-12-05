@@ -40,6 +40,10 @@
   &__icon{
     margin-right: $control-panel-icon-offset-horz;
     line-height: 0;
+
+    svg{
+      fill: $control-panel-settings-color;
+    }
   }
 
   &__text{

@@ -53,4 +53,10 @@
       color: $footer-nav-link-hover-color;
     }
   }
+
+  &__icon{
+    svg{
+      fill: $footer-nav-icon-color;
+    }
+  }
 }
