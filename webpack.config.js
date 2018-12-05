@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -55,12 +56,20 @@ module.exports = {
     },
     {
       test: /\.(gif|png|jpe?g|svg)$/i,
+      include: path.resolve(__dirname, 'src/images/img'),
       exclude: /node_modules/,
       loader: 'url-loader',
       options: {
         limit: 8192
         //outputPath: path.resolve(__dirname, 'docs/images')
       }
+    },
+    {
+      test: /\.svg$/,
+      include: path.resolve(__dirname, 'src/images/icons'),
+      use: [
+        'svg-sprite-loader'
+      ]
     },
     {
       test: /\.(html)$/,
@@ -82,6 +91,7 @@ module.exports = {
       hash: true,
       template: './src/index.html',
       filename: 'index.html'
-    })
+    }),
+    new SpriteLoaderPlugin(),
   ]
 };

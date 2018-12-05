@@ -2,6 +2,8 @@ import './vendor/fox-holder/fox-holder.scss';
 import './vendor/perfect-scroll/perfect-scrollbar.scss';
 import "./styles/main.scss";
 
+import './scripts/sprite-svg';
+
 import './vendor/fox-holder/fox-holder';
 import './scripts/page-toggle';
 import './scripts/login-btn';
