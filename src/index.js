@@ -1,5 +1,7 @@
 import './vendor/fox-holder/fox-holder.scss';
 import './vendor/perfect-scroll/perfect-scrollbar.scss';
+import './vendor/slick-coursel/slick.scss';
+import './vendor/slick-coursel/slick-theme.scss';
 import "./styles/main.scss";
 
 import './scripts/sprite-svg';
@@ -14,3 +16,4 @@ import './scripts/scrollbars';
 import './scripts/form-placeholder';
 import './scripts/scroll-animation';
 import './scripts/control-click';
+import './scripts/control-panel-slider';
