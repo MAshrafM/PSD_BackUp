@@ -101,7 +101,7 @@
       @include breakpoint(landscape){
         transform: scale(1);
       }
-      
+
       svg{
         @include transition-mix();
         fill: $img-slider-nav-color;
@@ -110,6 +110,9 @@
   }
 }
 
-.slick-track, .slick-slide, .slick-slide > div, .slider-block__slide {
+.slick-list, .slick-track, .slick-slide, .slick-slide > div, .slider-block__slides, .slider-block__slide {
   height: 100%;
+}
+.slick-track, .slick-slide, .slick-slide > div{
+  width: 100%;
 }

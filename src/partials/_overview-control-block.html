@@ -9,9 +9,9 @@
     </div>
 
     <div class="page-block__content">
-      <div class="control-panel page-block__subblock">
+      <div id="control-room" class="control-panel page-block__subblock">
         <div class="control-panel__list">
-          <div class="control-panel__item js-active">
+          <div class="control-panel__item js-active" data-panel-category="easy-installation">
             <a href="#" class="control-panel__link" title="Easy installation">
               <div class="control-panel__icon">
                 <span class="icon icon--img icon--img-xs" aria-hidden="true" role="presentation">
@@ -25,7 +25,7 @@
               </div>
             </a>
           </div>
-          <div class="control-panel__item">
+          <div class="control-panel__item" data-panel-category="control-panel">
             <a href="#" class="control-panel__link" title="Control Panel">
               <div class="control-panel__icon">
                 <span class="icon icon--img icon--img-xs" aria-hidden="true" role="presentation">
@@ -39,7 +39,7 @@
               </div>
             </a>
           </div>
-          <div class="control-panel__item">
+          <div class="control-panel__item" data-panel-category="notifications">
             <a href="#" class="control-panel__link" title="Notifications">
               <div class="control-panel__icon">
                 <span class="icon icon--img icon--img-xs" aria-hidden="true" role="presentation">
@@ -53,7 +53,7 @@
               </div>
             </a>
           </div>
-          <div class="control-panel__item">
+          <div class="control-panel__item" data-panel-category="quick-recovery">
             <a href="#" class="control-panel__link" title="Quick recovery">
               <div class="control-panel__icon">
                 <span class="icon icon--img icon--img-xs" aria-hidden="true" role="presentation">
@@ -69,7 +69,7 @@
           </div>
         </div>
       </div>
-      <div class="img-slider slider-block page-block__subblock">
+      <div class="img-slider slider-block page-block__subblock" data-panel="control-room">
         <div class="img-slider__nav img-slider__nav--prev" title="Previous Slide">
           <span class="icon icon--img icon--img-xxs" aria-hidden="true" role="presentation">
             <svg>
@@ -85,7 +85,7 @@
           </span>
         </div>
         <div class="img-slider__slides slider-block__slides">
-          <div class="img-slider__slide slider-block__slide">
+          <div class="img-slider__slide slider-block__slide" data-slide-category="easy-installation">
             <div class="img-slider__slide-image slider-block__slide-image">
               <picture>
                 <source srcset="src/images/img/slider/slide1-desktop.jpg 1x, src/images/img/slider/slide1-desktop-hi-dpi.jpg 2x" media="(min-width: 980px)">
@@ -98,7 +98,7 @@
             </div>
           </div>
 
-          <div class="img-slider__slide slider-block__slide">
+          <div class="img-slider__slide slider-block__slide" data-slide-category="control-panel">
             <div class="img-slider__slide-image slider-block__slide-image">
               <picture>
                 <source srcset="src/images/img/slider/slide2-desktop.jpg 1x, src/images/img/slider/slide2-desktop-hi-dpi.jpg 2x" media="(min-width: 980px)">
@@ -111,7 +111,7 @@
             </div>
           </div>
 
-          <div class="img-slider__slide slider-block__slide">
+          <div class="img-slider__slide slider-block__slide" data-slide-category="control-panel">
             <div class="img-slider__slide-image slider-block__slide-image">
               <picture>
                 <source srcset="src/images/img/slider/slide3-desktop.jpg 1x, src/images/img/slider/slide3-desktop-hi-dpi.jpg 2x" media="(min-width: 980px)">
@@ -120,11 +120,11 @@
               </picture>
             </div>
             <div class="img-slider__slide-text slider-block__slide-text">
-              <p>Slide 3</p>
+              <p>Control Panel Slide 2</p>
             </div>
           </div>
 
-          <div class="img-slider__slide slider-block__slide">
+          <div class="img-slider__slide slider-block__slide" data-slide-category="notifications">
             <div class="img-slider__slide-image slider-block__slide-image">
               <picture>
                 <source srcset="src/images/img/slider/slide4-desktop.jpg 1x, src/images/img/slider/slide4-desktop-hi-dpi.jpg 2x" media="(min-width: 980px)">
@@ -133,11 +133,11 @@
               </picture>
             </div>
             <div class="img-slider__slide-text slider-block__slide-text">
-              <p>Slide 4</p>
+              <p>Notifications 4</p>
             </div>
           </div>
 
-          <div class="img-slider__slide slider-block__slide">
+          <div class="img-slider__slide slider-block__slide" data-slide-category="quick-recovery">
             <div class="img-slider__slide-image slider-block__slide-image">
               <picture>
                 <source srcset="src/images/img/slider/slide5-desktop.jpg 1x, src/images/img/slider/slide5-desktop-hi-dpi.jpg 2x" media="(min-width: 980px)">
@@ -146,11 +146,11 @@
               </picture>
             </div>
             <div class="img-slider__slide-text slider-block__slide-text">
-              <p>Slide 5</p>
+              <p>Quick Recovery 5</p>
             </div>
           </div>
 
-          <div class="img-slider__slide slider-block__slide">
+          <div class="img-slider__slide slider-block__slide" data-slide-category="quick-recovery">
             <div class="img-slider__slide-image slider-block__slide-image">
               <picture>
                 <source srcset="src/images/img/slider/slide6-desktop.jpg 1x, src/images/img/slider/slide6-desktop-hi-dpi.jpg 2x" media="(min-width: 980px)">
@@ -159,11 +159,11 @@
               </picture>
             </div>
             <div class="img-slider__slide-text slider-block__slide-text">
-              <p>Slide 6</p>
+              <p>Quick Recovery 2</p>
             </div>
           </div>
 
-          <div class="img-slider__slide slider-block__slide">
+          <div class="img-slider__slide slider-block__slide" data-slide-category="quick-recovery">
             <div class="img-slider__slide-image slider-block__slide-image">
               <picture>
                 <source srcset="src/images/img/slider/slide7-desktop.jpg 1x, src/images/img/slider/slide7-desktop-hi-dpi.jpg 2x" media="(min-width: 980px)">
@@ -172,7 +172,7 @@
               </picture>
             </div>
             <div class="img-slider__slide-text slider-block__slide-text">
-              <p>Slide 7</p>
+              <p>Quick Recovery 3</p>
             </div>
           </div>
         </div>

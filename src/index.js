@@ -16,4 +16,5 @@ import './scripts/scrollbars';
 import './scripts/form-placeholder';
 import './scripts/scroll-animation';
 import './scripts/control-click';
+import './scripts/img-slider';
 import './scripts/control-panel-slider';
