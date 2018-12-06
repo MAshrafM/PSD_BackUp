@@ -11,11 +11,13 @@
 
   &__block{
     margin-bottom: $info-col-offset-bottom;
+    text-align: center;
 
     @include breakpoint(landscape){
       width: 85%;
       margin-left: auto;
       margin-right: auto;
+      text-align: left;
     }
 
     @include breakpoint(tablet){
@@ -110,7 +112,12 @@
     &--with-icon{
       display: flex;
       align-items: center;
+      justify-content: center;
       margin-top: 0;
+
+      @include breakpoint(landscape){
+        justify-content: flex-start;
+      }
     }
 
     &-h{
