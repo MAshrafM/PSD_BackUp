@@ -1,15 +1,39 @@
 .control-panel {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding: $control-panel-padding;
   border: .5px solid $control-panel-border-color;
   border-radius: $control-panel-border-radius;
 
+  @include breakpoint(landscape){
+    width: 87%;
+  }
+
+  @include breakpoint(tablet){
+    width: 100%;
+  }
+
   &__list{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include breakpoint(tablet){
+      flex-wrap: nowrap;
+    }
   }
 
   &__item{
-    width: $control-panel-item-width;
+    width: 100%;
+
+    @include breakpoint(landscape){
+      width: 45%;
+    }
+
+    @include breakpoint(tablet){
+      width: $control-panel-item-width;
+    }
 
     &.js-active{
 
@@ -27,9 +51,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: $control-panel-link-padding-vert $control-panel-link-padding-horz;
+    padding: ($control-panel-link-padding-vert * .7) $control-panel-link-padding-horz;
     color: $control-panel-link-color;
     opacity: $control-panel-link-opacity;
+
+    @include breakpoint(tablet){
+      padding: $control-panel-link-padding-vert $control-panel-link-padding-horz;
+    }
 
     &:hover{
       color: $control-panel-link-color-hover;
