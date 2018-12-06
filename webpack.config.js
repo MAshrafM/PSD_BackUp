@@ -36,7 +36,7 @@ module.exports = {
       use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader','sass-loader']
     },
     {
-      test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
+      test: /\.(woff(2)?|ttf|eot|otf|gif)(\?v=\d+\.\d+\.\d+)?$/,
       use: [{
           loader: 'file-loader',
           options: {

@@ -95,6 +95,11 @@
       height: 100%;
     }
 
+    &-xxs {
+      width: $icon-dimensions-xxs;
+      height: $icon-dimensions-xxs;
+    }
+    
     &-xs {
       width: $icon-dimensions-xs;
       height: $icon-dimensions-xs;
