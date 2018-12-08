@@ -7,6 +7,7 @@
   @include breakpoint(tablet){
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   &__block{
@@ -17,13 +18,13 @@
       width: 85%;
       margin-left: auto;
       margin-right: auto;
-      text-align: left;
     }
 
     @include breakpoint(tablet){
       max-width: 100%;
       margin-left: 0;
       margin-right: 0;
+      text-align: left;
     }
 
     &--sm{
@@ -115,7 +116,7 @@
       justify-content: center;
       margin-top: 0;
 
-      @include breakpoint(landscape){
+      @include breakpoint(tablet){
         justify-content: flex-start;
       }
     }
