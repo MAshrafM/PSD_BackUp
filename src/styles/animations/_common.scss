@@ -1,0 +1,106 @@
+.page-header__content {
+  @include transition-mix($duration: .35s);
+
+  position: relative;
+
+  &.js-initial-loading {
+    @include breakpoint(tablet) {
+      left: 30px;
+      opacity: 0;
+    }
+  }
+
+  &.js-loaded-element {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.page-header__image {
+  @include transition-mix($duration: .35s);
+  position: relative;
+
+  &.js-initial-loading {
+    @include breakpoint(tablet) {
+      left: -30px;
+      opacity: 0;
+    }
+  }
+
+  &.js-loaded-element {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.info-col__header-block--with-icon {
+
+  .info-col__icon {
+    @include transition-mix($delay: .2s);
+    position: relative;
+
+    &.js-loading-effect {
+      @include breakpoint(tablet) {
+        left: -30px;
+        opacity: 0;
+      }
+    }
+
+    &.js-loaded-element {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
+
+.info-col__icon--animated-top{
+  @include transition-mix($delay: .2s);
+  position: relative;
+
+  &.js-loading-effect, &.js-initial-loading{
+    @include breakpoint(tablet){
+      top: -30px;
+      opacity: 0;
+    }
+
+    &.js-loaded-element{
+      top: 0;
+      opacity: 1;
+    }
+  }
+}
+
+.info-col__icon--animated-scaleBig {
+  @include transition-mix($delay: .2s);
+  position: relative;
+
+  &.js-loading-effect {
+      @include breakpoint(tablet){
+      transform: scale(1.4);
+      opacity: 0;
+    }
+
+    &.js-loaded-element {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.info-col__icon--animated-left {
+  @include transition-mix($delay: .2s);
+  position: relative;
+
+  &.js-loading-effect, &.js-initial-loading {
+
+    @include breakpoint(tablet) {
+      left: -30px;
+      opacity: 0;
+    }
+
+    &.js-loaded-element {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
