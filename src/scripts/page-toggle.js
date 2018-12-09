@@ -1,12 +1,5 @@
-const OverviewPage = $("#overview-page");
-const FeaturesPage = $("#features-page");
-const ResellersPage = $('#resellers-page');
-
-const OverviewLink = $(".overview");
-const FeaturesLink = $(".features");
-const ResellersLink = $(".resellers");
-
-let pages = $("#page-content").children();
+const pages = $("#page-content").children();
+const togglePageLink = $(".js-page-toggle");
 
 function togglePage(page){
   pages.each(function () {
@@ -18,17 +11,8 @@ function togglePage(page){
   });
 }
 
-OverviewLink.click((e) => {
+togglePageLink.click(function(e) {
   e.preventDefault();
-  togglePage(OverviewPage);
-});
-
-FeaturesLink.click((e) => {
-  e.preventDefault();
-  togglePage(FeaturesPage)
-});
-
-ResellersLink.click((e) => {
-  e.preventDefault();
-  togglePage(ResellersPage)
+  let page = $('#'+$(this).data('page'));
+  togglePage(page);
 });
