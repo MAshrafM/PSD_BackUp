@@ -1,34 +1,34 @@
-const HomePage = $("#home-page");
 const OverviewPage = $("#overview-page");
-const FeaturesPage = $("#features-page")
+const FeaturesPage = $("#features-page");
+const ResellersPage = $('#resellers-page');
 
-const OverviewLink = $("#overview");
-const FeaturesLink = $("#features");
+const OverviewLink = $(".overview");
+const FeaturesLink = $(".features");
+const ResellersLink = $(".resellers");
+
+let pages = $("#page-content").children();
+
+function togglePage(page){
+  pages.each(function () {
+    if ($(this).is(':visible')) {
+      $(this).fadeOut(1000, () => {
+        page.fadeIn(1000);
+      });
+    }
+  });
+}
 
 OverviewLink.click((e) => {
   e.preventDefault();
-  if(HomePage.is(':visible')){
-    HomePage.fadeOut(1000, () => {
-      OverviewPage.fadeIn(1000);
-    });
-  }
-  if(FeaturesPage.is(':visible')){
-    FeaturesPage.fadeOut(1000, () => {
-      OverviewPage.fadeIn(1000);
-    });
-  }
+  togglePage(OverviewPage);
 });
 
 FeaturesLink.click((e) => {
   e.preventDefault();
-  if(HomePage.is(':visible')){
-    HomePage.fadeOut(1000, () => {
-      FeaturesPage.fadeIn(1000);
-    });
-  }
-  if(OverviewPage.is(':visible')){
-    OverviewPage.fadeOut(1000, () => {
-      FeaturesPage.fadeIn(1000);
-    });
-  }
-})
+  togglePage(FeaturesPage)
+});
+
+ResellersLink.click((e) => {
+  e.preventDefault();
+  togglePage(ResellersPage)
+});
