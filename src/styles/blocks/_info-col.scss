@@ -161,12 +161,19 @@
 
   &__text{
     font-weight: $medium-font-weight;
+
     &--color-prim{
       color: $info-col-text-color;
     }
 
     &--lineheight-l{
       line-height: 1.82;
+    }
+
+    &--strong-light{
+      strong{
+        color: $info-col-text-strong-color-light;
+      }
     }
   }
 }

@@ -21,6 +21,7 @@ $_tory-blue2: #2e318c;
 $_gem-blue: #393aa5;
 $_midnight-blue: #191e5a;
 $_midnight-blue-dark: #131744;
+$_windzor-blue: #282979;
 $_black: #000;
 
 // Setting Colors
@@ -59,6 +60,7 @@ $dark-bg-color-omega: $_midnight-blue-dark;
 $dark-bg-color-eps: $_indigo-blue2;
 $dark-bg-color-delta: $_tory-blue2;
 $dark-bg-color-beta: $_gem-blue;
+$dark-bg-color-eta: $_windzor-blue;
 $light-bg-color: $_white;
 $light-bg-color-sec: $_pale-grey;
 
@@ -226,6 +228,7 @@ $page-block-padding-vert: 127px;
 $page-block-accent-bg-light: $light-bg-color-sec;
 $page-block-accent-bg-dark: $dark-bg-color-delta;
 $page-block-accent-bg-dark-alt: $dark-bg-color-beta;
+$page-block-accent-bg-dark-alt-sec: $dark-bg-color-eta;
 $page-block-subblock-offset-vert: 70px;
 $page-block-subblock-offset-vert-sm: 23px;
 $page-subcol-offset-vert: 43px;
@@ -284,6 +287,7 @@ $info-col-header-size: $small-font-size-sec;
 $info-col-header-block-offset-vert: 19px;
 $info-col-content-offset-sm: 8px;
 $info-col-content-offset-md: 15px;
+$info-col-text-strong-color-light: $light-font-color-prim;
 $info-col-text-color: $middle-font-color-sec;
 $info-col-text-offset-vert: 10px;
 $info-col-offset-bottom: 30px;
