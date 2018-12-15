@@ -120,6 +120,11 @@
       height: $icon-dimensions-lg;
     }
 
+    &-llg{
+      width: $icon-dimensions-llg;
+      height: $icon-dimensions-llg;
+    }
+
     &-xl {
       width: $icon-dimensions-xl;
       height: $icon-dimensions-xl;
@@ -134,6 +139,11 @@
       svg{
         fill: $icon-font-color;
       }
+    }
+
+    &-rounded{
+      border-radius: $icon-border-radius;
+      overflow: hidden;
     }
   }
 }

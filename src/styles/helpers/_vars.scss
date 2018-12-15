@@ -105,8 +105,10 @@ $icon-dimensions-xs: 19px;
 $icon-dimensions-sm: 25px;
 $icon-dimensions-md: 45px;
 $icon-dimensions-lg: 71px;
+$icon-dimensions-llg: 190px;
 $icon-dimensions-xl: 340px;
 $icon-dimensions-xxl: 430px;
+$icon-border-radius: 5px;
 // coming-soon
 $coming-soon-overlay-bg: rgba($dark-settings-color, .7);
 $coming-soon-color: $light-font-color-prim;
@@ -295,9 +297,12 @@ $info-col-offset-bottom-lg: 58px;
 $info-col-icon-offset-horz: 46px;
 $info-col-icon-color: $accent-settings-color-sec;
 // Main > Page Block > Show Block : Block With Image
+$block-with-image-content-width-lg: 700px;
 $block-with-image-content-size: $small-font-size-omega;
 $block-with-image-content-size-sm: $small-font-size;
 $block-with-image-header-offset-vert: 20px;
+$block-with-image-header-size-sm: $medium-font-size-sec;
+$block-with-image-img-offset-horz: 80px;
 // Main: Overview > Page Block > Subnav
 $subnav-bg: $dark-bg-color-prim;
 $subnav-padding-vert: 32px;
