@@ -37,7 +37,9 @@
 
     &--sm{
       .header-block__header{
-        font-size: $block-with-image-header-size-sm;
+        @include breakpoint(tablet){
+          font-size: $block-with-image-header-size-sm;
+        }
       }
     }
   }
@@ -66,11 +68,15 @@
       text-align: left;
 
       .block-with-image__header{
-        align-items: flex-start;
-        text-align: left;
+        @include breakpoint(tablet){
+          align-items: flex-start;
+          text-align: left;
+        }
 
         .header-block__header{
-          text-align: left;
+          @include breakpoint(tablet){
+            text-align: left;
+          }
         }
       }
     }
