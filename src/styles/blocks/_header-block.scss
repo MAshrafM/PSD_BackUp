@@ -76,6 +76,7 @@
   }
 
   &__text{
+    display: flex;
     margin-top: $header-block-text-vert-offset;
     font: {
       size: $header-block-text-size;
@@ -83,10 +84,22 @@
     }
     line-height: 1.67;
 
+    @include breakpoint(tablet){
+      justify-content: space-between;
+    }
+
     &--sm{
       @include breakpoint(tablet){
         max-width: $header-block-text-sm-width;
       }
+    }
+
+    &--full-width{
+      width: 100%;
+    }
+
+    &-wrap{
+      max-width: $header-block-text-wrap-width;
     }
   }
 
