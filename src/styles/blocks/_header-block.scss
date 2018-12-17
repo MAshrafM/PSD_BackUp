@@ -66,6 +66,12 @@
           transform: translateY(-50%);
         }
       }
+
+      &-lg{
+        @include breakpoint(tablet){
+          width: $header-block-header-decorated-width-lg;
+        }
+      }
     }
   }
 

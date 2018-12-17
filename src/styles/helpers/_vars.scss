@@ -237,13 +237,15 @@ $page-subcol-offset-vert: 43px;
 // Main > Page Block > Header Block
 $header-block-offset-vert: 71px;
 $header-block-header-size: $big-font-size-delta;
-$header-block-header-decorated-width: 274px;
+$header-block-header-decorated-width: 290px;
+$header-block-header-decorated-width-lg: 370px;
 $header-block-header-decoration-bg: $accent-settings-color;
 $header-block-header-decorated-padding-horz: 23px;
 $header-block-header-decorated-padding-vert: 10px;
 $header-block-text-vert-offset: 30px;
 $header-block-text-size: $small-font-size;
 $header-block-text-sm-width: 375px;
+$header-block-text-wrap-width: 800px;
 $header-block-subheader-size: ($small-font-size-omega * 1.1);
 $header-block-subheader-offset-vert: 8px;
 $header-block-subheader-color-default: $middle-font-color-sec;
