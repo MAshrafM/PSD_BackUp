@@ -59,6 +59,8 @@
 
     @include breakpoint(landscape){
       display: inline-flex;
+      align-items: center;
+      justify-content: center;
       width: 20%;
       margin-left: 10%;
     }
@@ -175,7 +177,6 @@
         width: 220px;
         height: 220px;
         margin-left: 0;
-        margin-top: ($page-header-img-offset-vert * .7);
       }
 
       @include breakpoint(tablet){

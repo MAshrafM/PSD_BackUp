@@ -20,6 +20,18 @@
     }
   }
 
+  &--half-padding{
+    padding: (($page-block-padding-vert * .4) / 2) 0;
+
+    @include breakpoint(landscape){
+      padding: (($page-block-padding-vert * .6) / 2) 0;
+    }
+
+    @include breakpoint(tablet){
+      padding: ($page-block-padding-vert / 2) 0;
+    }
+  }
+
   &--half-padding-top{
     padding: (($page-block-padding-vert * .4) / 2) 0 ($page-block-padding-vert * .4);
 
