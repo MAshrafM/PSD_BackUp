@@ -77,3 +77,11 @@ body{
   color: #3c3940;
   line-height: $default-line-height;
 }
+
+.semitransparent {
+  opacity: .71;
+  
+  &--solid {
+    opacity: .85;
+  }
+}
