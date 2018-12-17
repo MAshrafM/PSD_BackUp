@@ -168,7 +168,13 @@
 
     &-color-1{
       svg{
-        fill: $icon-font-color;
+        fill: $icon-img-color-prim;
+      }
+    }
+
+    &-color-2{
+      svg{
+        fill: $icon-img-color-sec;
       }
     }
 
