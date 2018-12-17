@@ -102,7 +102,14 @@
 
     img, svg{
       width: 100%;
+    }
+
+    svg{
       height: 100%;
+    }
+
+    img{
+      height: auto;
     }
 
     &-max-h-30{
@@ -145,8 +152,13 @@
     }
 
     &-xl {
-      width: $icon-dimensions-xl;
-      height: $icon-dimensions-xl;
+      width: auto;
+      height: auto;
+
+      @include breakpoint(tablet){
+        width: $icon-dimensions-xl;
+        height: $icon-dimensions-xl;
+      }
     }
 
     &-xxl {

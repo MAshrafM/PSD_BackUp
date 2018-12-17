@@ -72,6 +72,10 @@
         flex-wrap: wrap;
         flex-direction: row;
 
+        @include breakpoint(desktop){
+          flex-wrap: nowrap;
+        }
+
         .cards-block__card-item{
           width: 100%;
           margin-bottom: 8%;
@@ -178,7 +182,8 @@
         text-align: center;
 
         @include breakpoint(desktop){
-          max-width: 100px;;
+          max-width: 100px;
+          text-align: left !important;
         }
 
         &-text{
@@ -188,12 +193,9 @@
     }
   
     &-icon {
-      margin-right: $card-icon-offset-horz;
-
-      svg{
-        @include transition-mix;
-        color: currentColor;
-      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &-header {

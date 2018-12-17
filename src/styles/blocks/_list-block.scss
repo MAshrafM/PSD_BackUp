@@ -26,8 +26,13 @@
   &__item{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: $list-item-offset-vert;
     width: 100%;
+
+    @include breakpoint(tablet){
+      justify-content: flex-start;
+    }
 
     &:last-child{
       margin-bottom: 0;

@@ -1,6 +1,11 @@
 .powered-by{
   display: flex;
   align-items: flex-end;
+  justify-content: center;
+
+  @include breakpoint(tablet){
+    justify-content: flex-start;
+  }
 
   &__text{
     flex-shrink: 0;

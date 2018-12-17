@@ -1,17 +1,28 @@
 .block-with-image {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
+  @include breakpoint(tablet){
+    flex-direction: row;
+  }
+
   &--img-right {
-    flex-direction: row-reverse;
+    flex-direction: column;
+
+    @include breakpoint(tablet){
+      flex-direction: row-reverse;
+    }
   }
 
   &--justified-start{
     justify-content: flex-start;
 
     .block-with-image__image{
-      margin-right: $block-with-image-img-offset-horz;
+      @include breakpoint(tablet){
+        margin-right: $block-with-image-img-offset-horz;
+      }
     }
 
     .block-with-image__content-block{
@@ -24,11 +35,13 @@
 
     @include breakpoint(landscape){
       display: inline-flex;
-      width: 25%;
+      max-width: 35%;
+      margin-bottom: 5%;
     }
 
     @include breakpoint(tablet){
       width:auto;
+      margin-bottom: 0;
     }
   }
 
@@ -45,10 +58,7 @@
   }
 
   &__content-block {
-
-    @include breakpoint(landscape){
-      max-width: 66%;
-    }
+    width: 100%;
 
     @include breakpoint(tablet){
       max-width: 51%;
@@ -65,7 +75,9 @@
     }
 
     &--align-left {
-      text-align: left;
+      @include breakpoint(tablet){
+        text-align: left;
+      }
 
       .block-with-image__header{
         @include breakpoint(tablet){
