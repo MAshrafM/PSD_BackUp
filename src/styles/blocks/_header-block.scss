@@ -77,15 +77,19 @@
 
   &__text{
     display: flex;
+    flex-direction: column;
     margin-top: $header-block-text-vert-offset;
     font: {
       size: $header-block-text-size;
       weight: $medium-font-weight;
     }
     line-height: 1.67;
+    text-align: center;
 
     @include breakpoint(tablet){
+      flex-direction: row;
       justify-content: space-between;
+      text-align: left;
     }
 
     &--sm{
@@ -100,6 +104,16 @@
 
     &-wrap{
       max-width: $header-block-text-wrap-width;
+    }
+
+    &-img{
+      margin-top: 5%;
+      align-self: center;
+
+      @include breakpoint(tablet){
+        margin-top: 0;
+        margin-left: 5%;
+      }
     }
   }
 

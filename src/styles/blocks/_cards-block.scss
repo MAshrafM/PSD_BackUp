@@ -8,6 +8,7 @@
     flex-direction: row;
   }
 
+
   &__card {
     display: flex;
     align-items: center;
@@ -58,9 +59,48 @@
         }
       }
 
+      &-sm-padding-horz {
+        padding: $card-full-padding-vert $card-full-padding-horz-sm;
+      }
+
       &-flex-on-mobile{
         flex-direction: row;
         align-items: center;
+      }
+
+      &-blocks-on-mob{
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .cards-block__card-item{
+          width: 100%;
+          margin-bottom: 8%;
+          text-align: center;
+
+          @include breakpoint(portrait){
+            width: 47%;
+            margin-bottom: 5%;
+
+            &:nth-last-child(1), &:nth-last-child(2){
+              margin-bottom: 0;
+            }
+          }
+
+          @include breakpoint(tablet){
+            width: 30%;
+            margin-bottom: 3%;
+
+            &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3){
+              margin-bottom: 0;
+            }
+          }
+
+          @include breakpoint(desktop){
+            width: auto;
+            margin-bottom: 0;
+            text-align: left;
+          }
+        }
       }
     }
 
@@ -123,6 +163,28 @@
 
     &--space-between {
       justify-content: space-between;
+    }
+
+    &--accent-light{
+      background-color: $card-bg-accent-light;
+    }
+
+    &-item{
+
+      &--support{
+        width: 100% !important;
+        line-height: 1.6;
+        text-transform: uppercase;
+        text-align: center;
+
+        @include breakpoint(desktop){
+          max-width: 100px;;
+        }
+
+        &-text{
+          font-weight: $bold-font-weight;
+        }
+      }
     }
   
     &-icon {
