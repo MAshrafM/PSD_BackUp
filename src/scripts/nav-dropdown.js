@@ -1,5 +1,5 @@
 const dropdownBtn = $('.nav__link--dropdown');
-const dropdown = $('.nav__dropdown');
+const dropdown = $('.js-dropdown-mobile');
 
 dropdownBtn.click(function(e) {
   e.preventDefault();
@@ -7,21 +7,18 @@ dropdownBtn.click(function(e) {
   const dropdownBtnCurrent = $(this);
   const windowWidth = $(document).width();
   let dropdownCurrent;
-  if(windowWidth > 996){
-    dropdownCurrent = dropdownBtnCurrent.siblings('.js-dropdown-desktop');
-  } else {
-    dropdownCurrent = dropdownBtnCurrent.siblings('.js-dropdown-mobile');
-  }
-  
+  if(windowWidth < 991){
+    dropdownCurrent = dropdownBtnCurrent.siblings('.js-dropdown-mobile'); 
 
-  if(!dropdownBtnCurrent.hasClass('js-active')){
-    dropdownBtn.removeClass('js-active');
-    dropdownBtnCurrent.addClass('js-active');
-    dropdown.fadeOut();
-    dropdownCurrent.fadeIn();
-  } else {
-    dropdownBtnCurrent.removeClass('js-active');
-    dropdownCurrent.fadeOut();
+    if(!dropdownBtnCurrent.hasClass('js-active')){
+      dropdownBtn.removeClass('js-active');
+      dropdownBtnCurrent.addClass('js-active');
+      dropdown.fadeOut();
+      dropdownCurrent.fadeIn();
+    } else {
+      dropdownBtnCurrent.removeClass('js-active');
+      dropdownCurrent.fadeOut();
+    }
   }
 });
 
