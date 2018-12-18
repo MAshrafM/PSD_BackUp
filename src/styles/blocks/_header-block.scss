@@ -118,7 +118,9 @@
   }
 
   &__subheader{
-    margin-top: $header-block-subheader-offset-vert;
+    max-width: $header-block-subheader-width;
+    margin: $header-block-subheader-offset-vert auto 0 auto;
+
     font: {
       size: ($header-block-subheader-size *.7);
       weight: $medium-font-weight;

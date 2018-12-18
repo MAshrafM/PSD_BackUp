@@ -44,6 +44,18 @@
     }
   }
 
+  &--extra-padding-top{
+    padding: (($page-block-padding-vert * .4) + ($page-header-top-offset-vert * .5)) 0 ($page-block-padding-vert * .4);
+
+    @include breakpoint(landscape){
+      padding: (($page-block-padding-vert * .6) + ($page-header-top-offset-vert * .5)) 0 ($page-block-padding-vert * .6);
+    }
+
+    @include breakpoint(tablet){
+      padding: ($page-block-padding-vert + ($page-header-top-offset-vert)) 0 $page-block-padding-vert;
+    }
+  }
+
   &--accent-bg-light{
     background-color: $page-block-accent-bg-light;
   }
