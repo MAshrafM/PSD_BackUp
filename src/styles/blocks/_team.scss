@@ -1,0 +1,37 @@
+.team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: (- $team-member-offset-vert );
+  
+  &__member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 $team-member-offset-horz $team-member-offset-vert;
+    text-align: center;
+    
+    &-img{
+      @include img-position($max-width: 100%, $max-height: 150%);
+      width: $team-member-img-dimensions;
+      height: $team-member-img-dimensions;
+      border-radius: 50%;
+    }
+    
+    &-info{
+      margin-top: $team-member-info-offset-vert;
+    }
+    
+    &-name{
+      font: {
+        size: $team-member-name-size;
+        weight: $bold-font-weight;
+      }
+    }
+    
+    &-job{
+      margin-top: $team-member-job-offset-vert;
+      font-weight: $medium-font-weight;
+    }
+  }
+}
