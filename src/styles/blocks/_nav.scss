@@ -38,10 +38,14 @@
       }
 
       .js-dropdown-desktop{
+        width: 100%;
+        height: auto;
         opacity: 1;
         visibility: visible;
 
         &:hover {
+          width: 100%;
+          height: auto;
           opacity: 1;
           visibility: visible;
         }
@@ -299,7 +303,7 @@
     }
 
     &.js-dropdown-desktop{
-      @include transition-mix;
+      @include transition-mix($property: opacity);
       display: none;
 
       @include breakpoint(tablet){
@@ -307,11 +311,15 @@
 
         display: block;
         max-height: 600px;
+        width: 0;
+        height: 0;
         overflow: hidden;
         opacity: 0;
         visibility: hidden;
 
         &:hover{
+          width: 100%;
+          height: auto;
           opacity: 1;
           visibility: visible;
         }
