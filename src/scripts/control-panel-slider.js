@@ -1,4 +1,4 @@
-const controlPanel = $('.control-panel');
+const controlPanel = $('.control-panel[data-connected-type="slider"]');
 
 controlPanel.each(function(){
   let currentPanel = $(this),
