@@ -18,3 +18,4 @@ import './scripts/scroll-animation';
 import './scripts/control-click';
 import './scripts/img-slider';
 import './scripts/control-panel-slider';
+import './scripts/control-panel-tabs';
