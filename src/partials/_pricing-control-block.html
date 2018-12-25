@@ -70,7 +70,18 @@
       </div>
       
       <div class="tabs page-block__subblock" data-panel="pricing-tabs">
-        <div class="tabs__panel js-active">Tab Panel 1</div>
+        <div class="tabs__panel js-active">
+          <div class="switch-block page-block__subblock">
+            <form class="switch-block__form">
+              <input id="tab-panel-1-radio-month" class="switch-block__radio switch-radio" type="radio" name="month-ann" value="month" title="Check Monthly or Annually Price" role="radio" aria-checked="false">
+              <input id="tab-panel-1-radio-ann" class="switch-block__radio js-active" type="radio" name="month-ann" value="ann" title="Check Monthly or Annually Price" role="radio" aria-checked="true" checked>
+              <label class="switch-block__label" for="tab-panel-1-radio-month">Monthly</label>
+              <div class="switch-block__toggle js-checked"></div>
+              <label class="switch-block__label" for="tab-panel-1-radio-ann">Annually <span class="switch-block__additional">(20% off)</span></label>
+            </form>
+          </div>
+          
+        </div>
 
         <div class="tabs__panel">Tab Panel 2</div>
 
