@@ -19,3 +19,4 @@ import './scripts/control-click';
 import './scripts/img-slider';
 import './scripts/control-panel-slider';
 import './scripts/control-panel-tabs';
+import './scripts/switch-toggle';
