@@ -1,0 +1,52 @@
+.switch-block {
+  margin-left: $switch-block-offset-horz;
+  
+  &__form{
+    display: flex;
+    align-items: center;
+  }
+  
+  &__label{
+    margin: 0 $switch-block-label-offset-horz;
+    font-weight: $bold-font-weight;
+    text-transform: uppercase;
+    color: $switch-block-label-color;
+  }
+  
+  &__radio{
+    display: none;
+  }
+  
+  &__additional{
+    margin: 0 ($switch-block-label-offset-horz / 3);
+    color: $switch-block-additional-color;
+    letter-spacing: 1.4px;
+  }
+  
+  &__toggle{
+    position: relative;
+    width: $switch-block-toggle-width;
+    height: $switch-block-toggle-height;
+    border: 1px solid $switch-block-label-color;
+    border-radius: $switch-block-toggle-height;
+    cursor: pointer;
+    
+    &::before{
+      @include transition-mix();
+      @include position-absolute($top: 50%, $left: $switch-block-toggle-status-offset-horz);
+      display: block;
+      width: $switch-block-toggle-status-dimensions;
+      height: $switch-block-toggle-status-dimensions;
+      content: '';
+      transform: translateY(-50%);
+      background-color: $switch-block-toggle-status-bg;
+      border-radius: 50%;
+    }
+    
+    &.js-checked{
+      &::before{
+        @include position-absolute($top: 50%, $left: calc(100% - #{$switch-block-toggle-status-dimensions} - #{$switch-block-toggle-status-offset-horz}));
+      }
+    }
+  }
+}
