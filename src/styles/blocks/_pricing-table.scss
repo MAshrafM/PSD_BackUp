@@ -50,5 +50,46 @@
         letter-spacing: 1.2px;
       }
     }
+
+    &__features-block{
+      margin-top: $pricing-table-features-offest-vert;
+    }
+
+    &__features-list{
+      list-style-type: none;
+    }
+
+    &__feature{
+      display: flex;
+      align-items: center;
+      margin-bottom: $pricing-table-feature-offset-vert;
+      font-weight: $medium-font-weight;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      &--disabled{
+        display: flex;
+        align-items: center;
+        color: $pricing-table-feature-disabled-color;
+        .icon{
+          margin-right: $pricing-table-feature-disabled-offset-vert;
+        }
+        svg{
+          fill: currentColor;
+        }
+      }
+    }
+
+    &--popular{
+      margin: 0 (- $pricing-table-border-width);
+      border-color: $pricing-table-popular-color;
+
+      table{
+        padding-top: $pricing-table-popular-padding-vert;
+        padding-bottom: $pricing-table-popular-padding-vert;
+      }
+    }
   }
 }
