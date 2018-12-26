@@ -11,10 +11,15 @@
     border-spacing: 0;
 
     &__table{
+      position: relative;
+      top: $pricing-table-popular-offset;
+      margin-bottom: $pricing-table-popular-offset;
+      z-index: 2;
       width: 100%;
       padding: $pricing-table-padding-vert $pricing-table-padding-horz;
       background-color: $pricing-table-bg;
       border-radius: $pricing-table-border-radius;
+      border-spacing: 0;
 
       thead{
         text-align: left;
@@ -26,6 +31,29 @@
       letter-spacing: 2.5px;
       text-transform: uppercase;
       color: $pricing-table-plan-name-color;
+
+      &-popular{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $pricing-table-popular-height;
+        padding: 0 $pricing-table-popular-header-padding-horz $pricing-table-popular-header-padding-vert;
+        background-color: $pricing-table-popular-color;
+        z-index: 1;
+
+        &-icon{
+          margin-right: $pricing-table-popular-header-icon-offset-horz;
+          opacity: .4;
+        }
+
+        &-text{
+          font-weight: $bold-font-weight;
+          color: $pricing-table-popular-header-color;
+          text-transform: uppercase;
+          letter-spacing: 1.4px;
+        }
+      }
     }
 
     &__price{
@@ -82,13 +110,26 @@
       }
     }
 
+    &__dropdown-block{
+
+      &--hidden{
+        visibility: hidden;
+      }
+    }
+
     &--popular{
       margin: 0 (- $pricing-table-border-width);
       border-color: $pricing-table-popular-color;
+      position: relative;
+      top: ($pricing-table-popular-offset - $pricing-table-border-width - ($pricing-table-popular-padding-vert - $pricing-table-padding-vert));
 
       table{
         padding-top: $pricing-table-popular-padding-vert;
         padding-bottom: $pricing-table-popular-padding-vert;
+      }
+
+      .pricing-table__plan{
+        color: $pricing-table-popular-plan-color;
       }
     }
   }
