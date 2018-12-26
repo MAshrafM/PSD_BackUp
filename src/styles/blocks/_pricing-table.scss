@@ -1,0 +1,54 @@
+.pricing{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-table{
+    flex: 1;
+    max-width: $pricing-table-width;
+    border: $pricing-table-border-width solid transparent;
+    border-radius: $pricing-table-border-radius;
+    border-spacing: 0;
+
+    &__table{
+      width: 100%;
+      padding: $pricing-table-padding-vert $pricing-table-padding-horz;
+      background-color: $pricing-table-bg;
+      border-radius: $pricing-table-border-radius;
+
+      thead{
+        text-align: left;
+      }
+    }
+
+    &__plan{
+      font-weight: $bold-font-weight;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: $pricing-table-plan-name-color;
+    }
+
+    &__price{
+      position: relative;
+      left: -4px;
+      display: flex;
+      align-items: flex-end;
+      margin-top: $pricing-table-price-offset-vert;
+      font: {
+        size: $pricing-table-price-size;
+        weight: $regular-font-weight;
+      }
+      color: $pricing-table-price-color;
+      text-transform: uppercase;
+      line-height: 1;
+
+      &-time{
+        position: relative;
+        top: -4px;
+        font-size:$pricing-table-price-time-size;
+        color: $pricing-table-price-time-color;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+}

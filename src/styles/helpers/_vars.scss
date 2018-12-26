@@ -367,3 +367,16 @@ $switch-block-toggle-height: 20px;
 $switch-block-toggle-status-dimensions: 13px;
 $switch-block-toggle-status-bg: $accent-settings-color;
 $switch-block-toggle-status-offset-horz: 3px;
+// Main: Pricing > Page Block > Pricing Table
+$pricing-table-width: 270px;
+$pricing-table-border-radius: 5px;
+$pricing-table-border-width: 3px;
+$pricing-table-bg: $light-settings-color;
+$pricing-table-padding-vert: 34px;
+$pricing-table-padding-horz: 34px;
+$pricing-table-plan-name-color: rgba($middle-font-color-delta, .7);
+$pricing-table-price-offset-vert: 9px;
+$pricing-table-price-color: $accent-settings-color;
+$pricing-table-price-size: $extra-big-font-size-delta;
+$pricing-table-price-time-size: $extra-small-font-size;
+$pricing-table-price-time-color: rgba($middle-font-color-delta, .7);
