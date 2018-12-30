@@ -2,14 +2,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  
+  @include breakpoint(desktop){
+    flex-wrap: no-wrap;
+  }
 
   &-table{
-    flex: 1;
-    max-width: $pricing-table-width;
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: $pricing-table-offset-vert !important;
     border: $pricing-table-border-width solid transparent;
     border-radius: $pricing-table-border-radius;
-    border-spacing: 0;
 
+    &:first-child{
+      margin-top: 0 !important;
+    }
+    
+    @include breakpoint(portrait){
+      width: 65%;
+    }
+    
+    @include breakpoint(landscape){
+      width: 45%;
+      
+      &-nth-child(2){
+        margin-top: 0 !important;
+      }
+    }
+    
+    @include breakpoint(tablet){
+      width: 35%;
+    }
+    
+    @include breakpoint(desktop){
+      flex: 1;
+      max-width: $pricing-table-width;
+      margin-top: 0 !important;
+    }
+    
     &__table{
       position: relative;
       top: $pricing-table-popular-offset;
@@ -113,7 +144,12 @@
     &__dropdown-block{
 
       &--hidden{
-        visibility: hidden;
+        display: none;
+        
+        @include breakpoint(landscape){
+          display: block;
+          visibility: hidden;
+        }
       }
     }
     
@@ -124,11 +160,18 @@
     }
 
     &--popular{
-      margin: 0 (- $pricing-table-border-width) ($pricing-table-popular-offset - (($pricing-table-popular-padding-vert - $pricing-table-padding-vert) * 2));
       border-color: $pricing-table-popular-color;
       position: relative;
-      top: ($pricing-table-popular-offset - ($pricing-table-border-width * 1.5) - (($pricing-table-popular-padding-vert - $pricing-table-padding-vert) * 2));
-
+      
+      @include breakpoint(tablet){
+        top: ($pricing-table-popular-offset - ($pricing-table-border-width * 1.5) - (($pricing-table-popular-padding-vert - $pricing-table-padding-vert) * 2));
+        margin: 0 (- $pricing-table-border-width) ($pricing-table-popular-offset - (($pricing-table-popular-padding-vert - $pricing-table-padding-vert) * 2));
+      }
+      
+      @include breakpoint(desktop){
+        margin: 0 (- $pricing-table-border-width) ($pricing-table-popular-offset - (($pricing-table-popular-padding-vert - $pricing-table-padding-vert) * 2)) !important;
+      }
+     
       table{
         padding-top: $pricing-table-popular-padding-vert;
         padding-bottom: $pricing-table-popular-padding-vert;

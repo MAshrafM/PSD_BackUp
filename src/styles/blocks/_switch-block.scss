@@ -4,6 +4,16 @@
   &__form{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    @include breakpoint(portrait){
+      flex-direction: row;
+    }
+    
+    @include breakpoint(desktop){
+      justify-content: flex-start;
+    }
   }
   
   &__label{
@@ -27,9 +37,16 @@
     position: relative;
     width: $switch-block-toggle-width;
     height: $switch-block-toggle-height;
+    margin: $switch-block-toggle-offset-vert 0;
+    transform: rotate(90deg);
     border: 1px solid $switch-block-label-color;
     border-radius: $switch-block-toggle-height;
     cursor: pointer;
+    
+    @include breakpoint(portrait){
+      margin: 0;
+      transform: rotate(0);
+    }
     
     &::before{
       @include transition-mix();
