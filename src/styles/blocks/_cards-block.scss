@@ -34,17 +34,19 @@
 
     &--full{
       flex-direction: column;
-      width: 80%;
+      width: 100%;
       padding: $card-full-padding-vert ($card-full-padding-horz * .5);
-      margin-bottom: 1%;
+      margin-bottom: 2%;
       margin-left: auto;
       margin-right: auto;
       flex: 0 0 auto;
-
+      text-align: center;
+      
       @include breakpoint(landscape){
         flex-direction: row;
-        width: 100%;
         margin-right: 0;
+        margin-bottom: 1%;
+        text-align: left;
       }
 
       @include breakpoint(tablet){
@@ -172,6 +174,18 @@
     &--accent-light{
       background-color: $card-bg-accent-light;
     }
+    
+    &--no-bg{
+      background-color: transparent;
+    }
+    
+    &--border{
+      border: 1px solid;
+      
+      &-color-1 {
+        border-color: $card-border-color-1;
+      }
+    }
 
     &-item{
 
@@ -224,6 +238,28 @@
           margin-top: 0;
         }
       }
+      
+      &--space-between{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        
+        @include breakpoint(landscape){
+          flex-direction: row;
+        }
+        
+        & > div{
+          &:first-child{
+            margin-bottom: $card-content-space-between-inner-offset;
+            
+            @include breakpoint(landscape){
+              margin-right: $card-content-spaced-between-inner-offset;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
     }
 
     &-text{
@@ -232,6 +268,12 @@
       &--xl{
         @include breakpoint(tablet){
           max-width: $card-text-width-xl;
+        }
+      }
+      
+      &--font-lg{
+        @include breakpoint(tablet){
+          font-size: $card-text-size-lg;
         }
       }
     }

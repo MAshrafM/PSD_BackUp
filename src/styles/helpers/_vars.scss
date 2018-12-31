@@ -257,6 +257,7 @@ $header-block-subheader-color-default: $middle-font-color-sec;
 $card-bg: $light-settings-color;
 $card-bg-accent-light: $light-settings-color-delta;
 $card-border-radius: 10px;
+$card-border-color-1: $middle-settings-color;
 $card-md-padding-horz: 45px;
 $card-md-padding-vert: 15px;
 $card-md-height: 125px;
@@ -268,7 +269,9 @@ $card-icon-offset-horz: 25px;
 $card-header-size: ($small-font-size * 1.1);
 $card-icon-accent-color: $accent-settings-color;
 $card-text-width-xl: 750px;
+$card-text-size-lg: $small-font-size-sec;
 $card-content-offset-vert: 20px;
+$card-content-space-between-inner-offset: 35px;
 // Main > Page Block > How It Works
 $how-it-works-border-color: $dark-settings-color-sec;
 $how-it-works-border-width: 3px;
