@@ -20,11 +20,7 @@ controlPanel.each(function(){
     let clickedPanelItem = $(this),
         clickedPanelItemIndex = clickedPanelItem.index();
     
-    currentTabsPanel.fadeOut().removeClass('js-active');
-
-    setTimeout(function () {
-        currentTabsPanel.eq(clickedPanelItemIndex).fadeIn().addClass('js-active');
-    }, 50);
-    
+    currentTabsPanel.removeClass('js-active');
+    currentTabsPanel.eq(clickedPanelItemIndex).addClass('js-active');
   });
 });
