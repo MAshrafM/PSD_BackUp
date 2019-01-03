@@ -52,6 +52,14 @@
       @include breakpoint(tablet){
         padding: $card-full-padding-vert $card-full-padding-horz;
       }
+      
+      .cards-block__card-icon{
+        margin-right: 0;
+        
+        @include breakpoint(landscape){
+          margin-right: $card-icon-offset-horz;
+        }
+      }
 
       &-sm-padding {
         padding: ($card-full-padding-vert-sm * .7) $card-full-padding-horz-sm;
