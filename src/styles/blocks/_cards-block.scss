@@ -262,7 +262,7 @@
             margin-bottom: $card-content-space-between-inner-offset;
             
             @include breakpoint(landscape){
-              margin-right: $card-content-spaced-between-inner-offset;
+              margin-right: $card-content-space-between-inner-offset;
               margin-bottom: 0;
             }
           }
