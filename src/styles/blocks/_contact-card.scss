@@ -1,0 +1,21 @@
+.contact-main{
+  max-width: $contact-main-form-width;
+  margin: auto;
+  
+  &__form{
+    font-weight: $medium-font-weight;
+  }
+  
+  &__input, &__textarea{
+    border: none;
+  }
+  
+  &__textarea{
+    height: $contact-main-textarea-height;
+  }
+  
+  &__checkbox-block {
+    display: flex;
+    justify-content: center;
+  }
+}
