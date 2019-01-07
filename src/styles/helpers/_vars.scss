@@ -267,9 +267,11 @@ $card-full-padding-horz-sm: 32px;
 $card-full-padding-vert-sm: 20px;
 $card-icon-offset-horz: 25px;
 $card-header-size: ($small-font-size * 1.1);
+$card-header-size-sm: $default-font-size;
 $card-icon-accent-color: $accent-settings-color;
 $card-text-width-xl: 750px;
 $card-text-size-lg: $small-font-size-sec;
+$card-text-offset-vert: 18px;
 $card-content-offset-vert: 20px;
 $card-content-space-between-inner-offset: 35px;
 // Main > Page Block > How It Works
@@ -412,3 +414,9 @@ $dropdown-select-item-color-hover: $light-font-color-prim;
 // Main: Contact
 $contact-main-form-width: 450px;
 $contact-main-textarea-height: 102px;
+$contact-info-header-size: $small-font-size;
+$contact-info-header-offset-vert: 44px;
+$contact-info-block-offset-vert: 8px;
+$contact-info-icon-offset-horz: 10px;
+$contact-info-link-size: 16px;
+$contact-info-link-hover-color: $accent-settings-color;
