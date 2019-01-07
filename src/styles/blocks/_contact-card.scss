@@ -1,6 +1,7 @@
 .contact-main{
   max-width: $contact-main-form-width;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   
   &__form{
     font-weight: $medium-font-weight;

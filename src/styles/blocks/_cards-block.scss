@@ -132,6 +132,21 @@
         width: auto;
       }
     }
+    
+    &--basic{
+      padding: $card-md-padding-vert ($card-md-padding-horz * .3);
+      width: 100%;
+      
+      @include breakpoint(landscape){
+        padding: ($card-md-padding-vert * 1.5) ($card-md-padding-horz / 2);
+        width: 80%;
+      }
+
+      @include breakpoint(tablet){
+        padding: ($card-md-padding-vert * 2.5) ($card-md-padding-horz / 2);
+        width: auto;
+      }
+    }
 
     &--half-border-radius{
       @include breakpoint(tablet){
@@ -235,6 +250,14 @@
       &--light-font{
         font-weight: $medium-font-weight;
       }
+      
+      &--sm{
+      
+      }
+      
+      &--uppercase{
+        text-transform: uppercase;
+      }
     }
 
     &-content{
@@ -245,6 +268,10 @@
         @include breakpoint(landscape){
           margin-top: 0;
         }
+      }
+      
+      &--align-center{
+      
       }
       
       &--space-between{
