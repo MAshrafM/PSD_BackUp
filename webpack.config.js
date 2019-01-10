@@ -41,7 +41,6 @@ module.exports = {
           loader: 'file-loader',
           options: {
               name: '[name].[ext]'
-              //outputPath: path.resolve(__dirname, 'docs/fonts')
           }
       }]
     },
@@ -51,7 +50,6 @@ module.exports = {
       enforce: 'pre',
       options: {
         disable: false
-        //outputPath: path.resolve(__dirname, 'docs/images')
       }
     },
     {
@@ -61,7 +59,6 @@ module.exports = {
       loader: 'url-loader',
       options: {
         limit: 8192
-        //outputPath: path.resolve(__dirname, 'docs/images')
       }
     },
     {
